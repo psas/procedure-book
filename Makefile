@@ -1,9 +1,8 @@
-BOOKS = launch-tower
+BOOKS = launch-tower.md
 
 PFLAGS = --toc -s
 
 all: build
 
 build:
-	cd $(BOOKS);\
-	pandoc $(PFLAGS) $(BOOKS).md -o procedure-book.pdf
+	pandoc $(PFLAGS) $(BOOKS) -o procedure-book.pdf
