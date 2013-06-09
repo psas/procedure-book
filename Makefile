@@ -2,16 +2,17 @@ BOOKS = launch-tower.md \
 	overnight.md \
 	arts.md
 
-PFLAGS = --variable=documentclass=psas-procedure-book \
+PFLAGS = --variable=documentclass=format/psas-procedure-book \
          --variable mainfont=Ariel \
-		 --include-before-body=prefix.tex \
+		 --include-before-body=format/prefix.tex \
          -N --smart --toc -s
 
 all: build
 
 build:
 	pandoc $(PFLAGS) $(BOOKS) -o procedures.pdf
-	pdftk cover.pdf procedures.pdf cat output procedure-book.pdf
+	pdftk format/procedurebook_cover.pdf format/blank.pdf procedures.pdf cat output procedure-book.pdf
+	rm -f procedures.pdf
 
 clean:
 	rm -f procedures.pdf procedure-book.pdf
