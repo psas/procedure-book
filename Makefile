@@ -1,5 +1,6 @@
 BOOKS = launch-tower.md \
-	overnight.md
+	overnight.md \
+	arts.md
 
 PFLAGS = --variable=documentclass=psas-procedure-book \
          --variable mainfont=Ariel \
