@@ -13,6 +13,7 @@
   - Normal socket set for 1/4-20 hex nuts and bolts
   - normal hammer
   - rubber mallet
+  - small hand-mirror on wand (for viewing LED colors on rail-side of rocket)
   - mini-sledge hammer
   - screw drivers
   - security screw driver bit set
