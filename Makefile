@@ -1,6 +1,8 @@
 BOOKS = launch-tower.md \
 	overnight.md \
-	arts.md
+	arts.md \
+    payload-checkout.md \
+    inventory.md \
 
 PFLAGS = --variable=documentclass=format/psas-procedure-book \
          --variable mainfont=Ariel \
