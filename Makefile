@@ -2,6 +2,7 @@ BOOKS = launch-tower.md \
 	overnight.md \
 	arts.md \
     payload-checkout.md \
+    reference.md \
     inventory.md \
 
 PFLAGS = --variable=documentclass=format/psas-procedure-book \
