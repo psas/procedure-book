@@ -12,6 +12,7 @@ Standard comm frequencies:
  - KD7CJT: Andrew
  - KF7RAS: Nathan
  - KJ7SU: Glenn
+ - KC7KWX: Casey
 
 
 ## Network
