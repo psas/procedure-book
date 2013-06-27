@@ -14,6 +14,7 @@ Standard comm frequencies:
  - KJ7SU: Glenn
  - KC7KWX: Casey
  - KF7VJX: Jenner
+ - KF7NLF: Kenny
 
 ## Network
 
