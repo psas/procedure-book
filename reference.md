@@ -13,7 +13,7 @@ Standard comm frequencies:
  - KF7RAS: Nathan
  - KJ7SU: Glenn
  - KC7KWX: Casey
-
+ - KF7VJX: Jenner
 
 ## Network
 
