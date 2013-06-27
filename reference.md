@@ -7,6 +7,12 @@ Standard comm frequencies:
  - **2-meter: 146.430 MHz**
  - **FRS/GMRS channel 5**
 
+### Call Signs
+
+ - KD7CJT: Andrew
+ - KF7RAS: Nathan
+ - KJ7SU: Glenn
+
 
 ## Network
 
