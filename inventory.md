@@ -3,38 +3,45 @@
 ## Primary Tools & Supplies
 
 ### Hand Tools
-  - breaker bar (1/2 automotive type)
+
   - box-wrenches
+  - ignition wrenches
   - socket set
   - socket extensions
   - Adapter to connect automotive socket to right angle drill
   - automotive sockets (for sand-screws)
+  - breaker bar (1/2 automotive type)
   - crescent wrenches (assorted sizes)
-  - Normal socket set for 1/4-20 hex nuts and bolts
   - normal hammer
   - rubber mallet
-  - small hand-mirror on wand (for viewing LED colors on rail-side of rocket)
   - mini-sledge hammer
   - screw drivers
   - security screw driver bit set
   - pliers
-  - allen wrench sets
   - snap ring pliers (for motor retainment rings if necessary)
+  - allen wrench sets
   - box cutter  
   - Level (should be perminently in tower box)
   - measuring tape
   - strap wrenches for motor assembly
-  - calipers
   - scissors
   - sheet metal shears
+  - small hand-mirror on wand (for viewing LED colors on rail-side of rocket)
+  - tool belt
+  - philips quick-insert hex bits
+  - hex bit extensions
+  - hex bit to socket adaptors (1/4, 3/8, 1/2)
+  - calipers
+  - leather work-gloves
 
 ### Power Tools
   - DeWalt Right Angle Drill for driving in sand screws
   - 120VAC generator (for generator->tools, needed during tower setup)
+  - cordless drill (with extra battery and charger)
 
 ### Support Tools 
   - saw horses (4)
-  - ladder
+  - Little Giant Ladder
   - 75lb digital postal scale (final weight of rocket necessary)
   - digital hanging fish scale (final weight of rocket necessary)
   - digital jewelers scale
@@ -53,7 +60,7 @@
   - WD-40
   - electrical tape
   - duct tape
-   safety glasses
+  - safety glasses
   - zip ties
   - blue masking tape
   - Motor removal 2x4 kit (should be in one of the plastic tubs)
@@ -65,6 +72,8 @@
   - A few Misc 2x4s and 4x4s (just in case)
   - card tables and chairs
   - narrow string/rope
+  - ear plugs
+  - rubber bands
 
 ## Emergency Tools & Supplies
   - orbital sander
@@ -73,18 +82,17 @@
   - 4 inch angle grinder
   - sawzall
   - sand paper
+  - hand sanding block
   - super glue
   - 5 min epoxy
   - 30 minute epoxy (may be needed for epoxying aerotech motor grains)
   - jb-weld
   - full drill bit set
   - 1/2 inch corded drill
-  - cordless drill
   - hack saw
   - metal files
   - counter sinks
   - deburing tool
-  - leather work-gloves
   - lighter
 
 ## Launch Tower Parts
@@ -108,6 +116,17 @@
   - Umbilical Bar
   - high-visibility coverings for guy-wires
 
+## Motor
+  - Motor Casing
+  - Forward and Aft Closures
+  - Main fuel grains
+  - Smoke Grain
+  - O-rings
+  - Special motor tools, if necessary
+  - Igniters
+  - 1/8 inch dowels
+  - Grain removial 2x4
+  - Plastic trash bag for burned liner (it smells really bad)
 
 ## Electrical Tools and Supplies
   - Dell LCD Monitor w/ S-Video and composite input (with external power supply)
@@ -118,11 +137,10 @@
   - Soldering Iron
   - Resistor assortment
   - 12volt to 120VAC inverter w/ 12v battery clamps
-  - Mag flashlight
   - 120vac to multi-voltage output AC wall wart adapters (2)
   - car usb charger
   - 12v car battery, if available
-  - 2 channel 100mhz Oscilloscope
+  - 4 channel Agelent Oscilloscope
   - AA batteries
   - AAA batteries
   - D batteries
@@ -137,7 +155,7 @@
   - Roll Control launch detect shorting tether.
   - Opal docking station and FTDI cable.
   - TeleMetrum receive cable and antenna (multiple okay)
-  - ARTS data cable
+  - ARTS data cable (LEDs, USB Serial Adaptor)
 
 ## General Stuff
   - screw/nut/bolt assortments
@@ -151,6 +169,7 @@
   - camera
   - 1200fps camera
   - flashlights
+  - Leatherman
 
 
 ## Suggested Camping Gear (if camping)
@@ -158,6 +177,8 @@
   - Tarp for under tent
   - Camp chair(s)
   - Stove (if cooking)
-  - food (sandwiches, bagels, muffins, fruit, raw vegies, granola bars, are all pretty practical)
+  - food (coffee!!!, sandwiches, bagels, muffins, fruit, raw vegies, granola bars, are all pretty practical)
   - water
   - sleeping bag & extra blankets if its going to be cold
+  - flashlight
+
