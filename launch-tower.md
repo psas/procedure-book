@@ -2,7 +2,6 @@
 
 Overview:
 
-
 ![Launch tower overview](diagrams/launch_tower_labled.png)
 
 

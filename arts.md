@@ -1,19 +1,21 @@
-# ARTS-2
+# Recovery Checkout
 
-## Program the ARTS-2
+## ARTS-2
+
+### Program the ARTS-2
 
  1. Connect 9v power, and RS-232 serial cable
  1. Start up Data Analyzer application from Ozark Aerospace
  1. Specify com port if necessary
 
-## Verify correct operation of ARTS-2
+### Verify correct operation of ARTS-2
 
  1. Goto altimeter -> diagnostics
  1. Press chirp to test tone generation
  1. With pyros disconnected, click boomer/sw, both pyros should show bad. Switch 2 should show 'off', and switch 1 show 'on'
  1. Connect the resistor/led combo to each pyro channel, click boomer/sw to verify that the respective channel shows OK. Also test-fire each pyro with the respective LED to make sure it lights the LED.
 
-## Setup profiles
+### Setup profiles
 
  1. We will be using flight profile 1 (one). Make sure respective dip switch on (dip switch 1 should be 'On')
  1. Goto the Altimeter -> Configuration

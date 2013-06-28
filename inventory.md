@@ -1,5 +1,12 @@
 # Inventory
 
+## Things that the group should have at least one of
+
+ - First aid kit, trauma kit if possible
+ - Jumper Cables
+ - Extra H2O, Ice if possible for heat stroke
+
+
 ## Primary Tools & Supplies
 
 ### Hand Tools

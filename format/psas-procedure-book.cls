@@ -4,7 +4,7 @@
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{letter}}
 \ProcessOptions\relax
-\LoadClass[12pt]{book}
+\LoadClass[10pt]{book}
 
 %----------------------------------------------------------------------------%
 
