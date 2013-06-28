@@ -15,6 +15,7 @@ Standard comm frequencies:
  - `KC7KWX` Casey
  - `KF7VJX` Jenner
  - `KF7NLF` Kenny
+ - `KG7DBF` Gavin
 
 ## Network
 
