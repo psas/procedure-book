@@ -56,3 +56,4 @@ This list will be more random, but worth listing as most pertain to more than on
  - USB to Serial adapter
  - Serial to TTL or USB to TTL
  - Video camera
+ - Binoculars
