@@ -2,6 +2,7 @@ BOOKS = launch-tower.md \
 	overnight.md \
 	arts.md \
     payload-checkout.md \
+    on-tower.md \
     reference.md \
     personal-supplies.md \
     inventory.md \
@@ -32,5 +33,4 @@ html:
 	pandoc $(HFLAGS) $(BOOKS) -o procedure-book.html
 
 clean:
-	rm -f procedures.pdf procedure-book.pdf
-
+	rm -f procedures.pdf procedure-book.pdf procedure-book.html
