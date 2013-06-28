@@ -9,7 +9,8 @@ BOOKS = launch-tower.md \
 PFLAGS = --variable=documentclass=format/psas-procedure-book \
          --variable mainfont=Ariel \
 		 --include-before-body=format/prefix.tex \
-         -N --smart -s
+         --chapters \
+         -N --smart -s --toc \
 
 
 HFLAGS = --include-in-header=format/header.html \
