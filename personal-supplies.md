@@ -21,7 +21,7 @@ Most of these things should be on hand per person.
  - Coffee or tea or energy drinks: Zombies and rockets, water and oil
  - Any drugs you need to sustain life AND methods for storing them in the desert heat/cold
 
-## Keep you cozie
+## Keep you cozy
 
  - Flashlight
  - Sunscreen
@@ -31,7 +31,7 @@ Most of these things should be on hand per person.
  - Way to cook your food
  - Sleeping bag
  - Toothbrush
- - Deoderant
+ - Deodorant
  - Pillow
  - Teddy Bear :)
  - Tent or cover
