@@ -4,8 +4,7 @@
 
  - First aid kit, trauma kit if possible
  - Jumper Cables
- - Extra H2O, Ice if possible for heat stroke
-
+ - Extra water, Ice if possible for heat stroke
 
 ## Primary Tools & Supplies
 
@@ -135,6 +134,7 @@
   - Grain removial 2x4
   - Plastic trash bag for burned liner (it smells really bad)
 
+
 ## Electrical Tools and Supplies
   - Dell LCD Monitor w/ S-Video and composite input (with external power supply)
   - JTAG adaptor
@@ -153,10 +153,6 @@
   - D batteries
   - 9v Batteries
 
-## Radio Gear
-  - HAM Radio(s)
-  - Ham radio car charger
-  - family band radios
 
 ## Cables
   - Roll Control launch detect shorting tether.
@@ -164,28 +160,9 @@
   - TeleMetrum receive cable and antenna (multiple okay)
   - ARTS data cable (LEDs, USB Serial Adaptor)
 
+
 ## General Stuff
   - screw/nut/bolt assortments
-  - sun glasses
-  - water
-  - water bottle(s)
-  - hat
-  - sunscreen
   - Binoculars
-  - camera tripod
-  - camera
   - 1200fps camera
-  - flashlights
-  - Leatherman
-
-
-## Suggested Camping Gear (if camping)
-  - Tent
-  - Tarp for under tent
-  - Camp chair(s)
-  - Stove (if cooking)
-  - food (coffee!!!, sandwiches, bagels, muffins, fruit, raw vegies, granola bars, are all pretty practical)
-  - water
-  - sleeping bag & extra blankets if its going to be cold
-  - flashlight
 
