@@ -34,6 +34,10 @@ These things should be on hand per person.
  - Sandals
  - Shoes
  - PSAS shirt
+ - Chair
+ - Towel
+ - Toilet Paper (Just in case)
+ - Hat that covers the neck
 
 
 ## Extras
@@ -57,3 +61,13 @@ This list will be more random, but worth listing as most pertain to more than on
  - Serial to TTL or USB to TTL
  - Video camera
  - Binoculars
+ - Sun shade / open walled tent / canopy
+ - Clock or watch for ground station
+ 
+## Tools
+
+General list, name by what you are bringing if you would like to get a count.
+
+ - CA (Cyanoacrylate)
+ - Gorilla Tape
+ - Butane soldering iron
