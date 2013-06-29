@@ -3,6 +3,8 @@ BOOKS = launch-tower.md \
 	arts.md \
     payload-checkout.md \
     on-tower.md \
+    launch.md \
+    contingency.md \
     reference.md \
     personal-supplies.md \
     inventory.md \
