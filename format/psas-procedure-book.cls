@@ -8,7 +8,7 @@
 
 %----------------------------------------------------------------------------%
 
-\RequirePackage[paperwidth=5.5in,paperheight=8.5in,inner=1in,outer=0.5in,top=0.5in,bottom=0.5in]{geometry}
+\RequirePackage[paperwidth=5.5in,paperheight=8.5in,inner=1in,outer=0.5in,top=0.75in,bottom=0.75in]{geometry}
 \usepackage{paralist}
 	\let\itemize\compactitem
 	\let\enditemize\endcompactitem
