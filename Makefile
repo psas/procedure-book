@@ -24,11 +24,11 @@ HFLAGS = --include-in-header=format/header.html \
 OUTFILE = procedure-book
 
 
-all: latex booklet
+all: clean latex booklet html
 
 latex:
 	pandoc $(PFLAGS) $(BOOKS) -o procedures.pdf
-	pdftk format/procedurebook_cover.pdf format/blank.pdf procedures.pdf cat output $(OUTFILE).pdf
+	pdftk format/procedurebook_cover.pdf format/blank.pdf procedures.pdf format/blank.pdf cat output $(OUTFILE).pdf
 	rm -f procedures.pdf
 
 booklet:
