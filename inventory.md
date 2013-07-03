@@ -40,8 +40,6 @@
   - hex bit to socket adaptors (1/4, 3/8, 1/2)
   - calipers
   - leather work-gloves
-  - shovel (for fire duty)
-  - hatchet (for brush)
 
 ### Power Tools
   - DeWalt Right Angle Drill for driving in sand screws
@@ -62,6 +60,8 @@
   - cardboard PSAS sign to post by road
   - super-lube, for motor assembly
   - fire extinguisher
+  - shovel (for fire duty)
+  - hatchet (for brush)
   - first aid kit
   - 1/8 inch dia dowels, 3-4 ft long, for holding igniters in place in pyros (or small square balsa wood lengths)
   - E-matches 
