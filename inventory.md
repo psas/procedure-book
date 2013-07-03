@@ -24,6 +24,7 @@
   - screw drivers
   - security screw driver bit set
   - pliers
+  - vise grips
   - snap ring pliers (for motor retainment rings if necessary)
   - allen wrench sets
   - box cutter  
@@ -39,6 +40,8 @@
   - hex bit to socket adaptors (1/4, 3/8, 1/2)
   - calipers
   - leather work-gloves
+  - shovel (for fire duty)
+  - hatchet (for brush)
 
 ### Power Tools
   - DeWalt Right Angle Drill for driving in sand screws
