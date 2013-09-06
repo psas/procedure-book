@@ -4,6 +4,7 @@ BOOKS = launch-tower.md \
 	arts.md \
     payload-checkout.md \
     on-tower.md \
+    ltccom.md \
     launch.md \
     contingency.md \
     reference.md \
