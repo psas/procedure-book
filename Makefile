@@ -1,4 +1,5 @@
 BOOKS = launch-tower.md \
+	launch-tower-computer.md \
 	overnight.md \
 	arts.md \
     payload-checkout.md \
