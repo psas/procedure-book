@@ -1,21 +1,12 @@
-BOOKS = launch-tower.md \
-	launch-tower-computer.md \
-	overnight.md \
-	arts.md \
-    payload-checkout.md \
-    on-tower.md \
-    ltccom.md \
-    launch.md \
-    contingency.md \
-    reference.md \
-    personal-supplies.md \
-    inventory.md \
+BOOKS:=$(shell ls *-*.markdown)
 
 PFLAGS = --variable=documentclass=format/psas-procedure-book \
          --variable mainfont=Ariel \
 		 --include-before-body=format/prefix.tex \
+         --parse-raw \
          --chapters \
          -N --smart -s --toc \
+         --to=latex+yaml_metadata_block
 
 
 HFLAGS = --include-in-header=format/header.html \
@@ -31,9 +22,16 @@ OUTFILE = procedure-book
 all: clean latex booklet html
 
 latex:
+	pandoc $(PFLAGS) $(BOOKS) -o procedures.tex
+
+pdf:
 	pandoc $(PFLAGS) $(BOOKS) -o procedures.pdf
 	pdftk format/procedurebook_cover.pdf format/blank.pdf procedures.pdf format/blank.pdf cat output $(OUTFILE).pdf
 	rm -f procedures.pdf
+
+jekyll:
+	./make_index.py
+	jekyll
 
 booklet:
 	#pdfcrop $(OUTFILE).pdf --noclip --margins 10

@@ -1,3 +1,8 @@
+---
+title: Inventory
+layout: base
+---
+
 # Inventory
 
 ## Things that the group should have at least one of

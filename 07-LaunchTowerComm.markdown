@@ -1,3 +1,8 @@
+---
+title: Launch Tower COMM
+layout: base
+---
+
 # Launch Tower COMM
 
 Include images of software in operation

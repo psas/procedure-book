@@ -1,4 +1,7 @@
-# Recovery Checkout
+---
+title: ARTS-2
+layout: base
+---
 
 ## ARTS-2
 

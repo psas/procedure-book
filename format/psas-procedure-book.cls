@@ -22,3 +22,4 @@
 
 
 \renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\maketitle}{}

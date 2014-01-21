@@ -1,3 +1,8 @@
+---
+title: Launch Procedures
+layout: base
+---
+
 # Launch Procedures
 
 ## Basic Powerup

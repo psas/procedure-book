@@ -1,3 +1,8 @@
+---
+title: Launch Tower Computer
+layout: base
+---
+
 # LTC
 
 Image goes here

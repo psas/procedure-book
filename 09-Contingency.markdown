@@ -1,3 +1,8 @@
+---
+title: Contingency
+layout: base
+---
+
 # Contingency
 
 ## Ignition Failure

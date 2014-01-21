@@ -1,3 +1,8 @@
+---
+title: Personal Supplies
+layout: base
+---
+
 # Personal Supplies
 
 The purpose of this list is to give ideas to attendees as to what they should bring.

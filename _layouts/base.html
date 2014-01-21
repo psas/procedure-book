@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PSAS Procedure Book">
+  {% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+  {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+  <title>{{ page.title }}</title>
+ </head>
+ <body>
+  <div class="wrapper">
+   <div id="header">
+    <div class="container">
+     <h1>Launch Procedure Book</h1>
+    </div>
+   </div>
+   <div id="content">
+    <div class="container">
+      {{ content }}
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   <div class="container">
+    <a class="pull-right" href="#">Back to top</a>
+    <p>
+     PSAS Launch Procedure Book    
+    </p>
+   </div>
+  </div>
+ </body>
+</html>
+

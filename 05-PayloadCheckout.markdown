@@ -1,3 +1,8 @@
+---
+title: Launch Tower
+layout: base
+---
+
 # Payload Checkout
 
 ## Camera Block
