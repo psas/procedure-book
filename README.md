@@ -1,29 +1,41 @@
 # PSAS Launch 11 Procedure Book
  
-Standard Operating Procedures, reference, and support documentation for L-11
+Standard Operating Procedures, reference, and support documentation for
+[L-11]()
+
+<http://psas.github.io/procedure-book/>
+
 
 ## Editing
 
-The raw book files are [markdown](http://daringfireball.net/projects/markdown/syntax). Please keep each major secion in it's own file for easier managment.  Files can be editied in place using github's web interface, or simply clone the repo and open the files in your favorite text editor.
+The raw book files are
+[markdown](http://daringfireball.net/projects/markdown/syntax). Please keep each
+major secion in it's own file for easier managment.  Files can be editied in
+place using github's web interface, or simply clone the repo and open the files
+in your favorite text editor.
 
-_If you add a new file be sure to add the filename to the `BOOKS` variable in the Makefile._
 
 
-## Building
+## Building Book Locally
 
-For a simple HTML page containing the whole book run
 
-    $ make html
+### Prerequisites
 
-For a pdf of the book make sure you have pdftk as well as [pandoc](http://johnmacfarlane.net/pandoc/README.html) installed with LaTeX support.
+LaTeX and 
+[pandoc](http://johnmacfarlane.net/pandoc/README.html) installed with LaTeX
+support.
 
-Run:
+**NOTE**: pandoc > 1.12.1 required to use the yaml_metadata_block format in
+common with jekyll
 
-	$ make latex
 
-For a booklet (printable full duplex on US Letter paper, to be folded in half and staple bound.  This requires a fair amount of pdf and ps tools, check the make error ouput for hints.
+### Build
 
-Run:
+	$ make pdf
+
+For a booklet (printable full duplex on US Letter paper, to be folded in half
+and staple bound.  This requires a fair amount of non standard pdf and ps tools
+(sorry) check the Makefile and error ouput for hints.
 
     $ make booklet
 
