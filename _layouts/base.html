@@ -6,13 +6,15 @@
   <meta name="description" content="PSAS Procedure Book">
   {% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
   {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+  <link href="{{ relative }}format/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ relative }}format/css/style.css" rel="stylesheet">
   <title>{{ page.title }}</title>
  </head>
  <body>
   <div class="wrapper">
    <div id="header">
     <div class="container">
-     <h1>Launch Procedure Book</h1>
+     <h1>PSAS Launch Procedure Book</h1>
     </div>
    </div>
    <div id="content">

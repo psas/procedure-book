@@ -1,1 +1,1 @@
-exclude: [README.md,Makefile,make_index.py,format]
+exclude: [README.md,Makefile,make_index.py]
