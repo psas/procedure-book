@@ -19,8 +19,13 @@ Standard comm frequencies:
  - `KJ7SU`  Glenn
  - `KC7KWX` Casey
  - `KF7VJX` Jenner
+ - `KE7EKT` Jamey
+ - `KE7EKR` Sarah
+ - `KD7SQG` Keith P.
+ - `KD7SQH` Bart
  - `KF7NLF` Kenny
  - `KG7DBF` Gavin
+ - `KG7EYD` K
 
 ## Network
 
