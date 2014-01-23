@@ -7,8 +7,8 @@ layout: base
 
 ## Tools for On Tower Procedures
 
-  - Small flashlight to view DVR inside aeroshell
-  - Spotting Tube, to block light while inspecting the DVR LEDs
+  - Small flashlight to view inside aeroshell
+  - Spotting Tube, to block light while inspecting internal LEDs
   - Medium flat-head screw driver, for main switches, make sure it will fit thru the aeroshell holes
 
 ## Pre-Launch
@@ -29,7 +29,6 @@ layout: base
 
 1. Turn on HD camera (SW 1)
 1. Turn on external camera (SW2)
-1. Plug in monitor to the av-out pass-through and verify that the DVR is receiving video and recording.
 1. Roll Control.
     i. Connect tether connector wire to roll control.
     i. 10 second calibration to elapse, fins are twitching

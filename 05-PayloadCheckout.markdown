@@ -10,9 +10,6 @@ layout: base
 1. Apply 12 V to Payload
     - Red LED comes on ATV overlay board
     - ~190 mA
-1. Power on DVR
-    - DVR LEDs (top) Blue, pause Green, Red
-    - ~190 mA
 1. Power on GearCam
     - LEDs (top of camera block) Red, Blue slow blink
     - ~500 mA
@@ -28,7 +25,6 @@ layout: base
 
 1. Charge
     - TeleMetrum
-    - DVR (has labeled charger)
 1. Check Battery voltages
     - ARTS
 
@@ -46,9 +42,6 @@ _If the erector set has to be removed, the black ABS camera block has to be remo
 1. Check 9 V leads are terminated into ARTS and TeleMetrum
     - ARTS
     - TeleMetrum
-1. Check switches on DVR
-    - On the front: [Off/TV/LCD] should be **Off**
-    - On the top: [Off/On/Rec] should **Off** (slid all the way away from you)
 1. Aeroshell:
     i. Slide aeroshell down so the square hole lines up with the APS in the front of the camera sled
     i. Slide until flush with top of module
