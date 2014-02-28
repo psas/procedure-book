@@ -17,6 +17,7 @@ Standard comm frequencies:
  - `KD7CJT` Andrew
  - `KF7RAS` Nathan
  - `KJ7SU`  Glenn
+ - `KF7CZB` Dave C.
  - `KC7KWX` Casey
  - `KF7VJX` Jenner
  - `KE7EKT` Jamey
