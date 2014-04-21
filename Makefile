@@ -39,7 +39,7 @@ booklet:
 	psbook $(OUTFILE)-crop.ps book-$(OUTFILE).ps
 	ps2pdf book-$(OUTFILE).ps book-$(OUTFILE).pdf
 	pdfnup book-$(OUTFILE).pdf --nup 2x1 --suffix '2x1'
-	pdftk book-$(OUTFILE)-2x1.pdf cat 1-endE output $(OUTFILE)_print.pdf
+	pdftk book-$(OUTFILE)-2x1.pdf cat 1-end output $(OUTFILE)_print.pdf
 	rm -f $(OUTFILE)-crop.pdf $(OUTFILE)-crop.ps book-$(OUTFILE).ps book-$(OUTFILE).pdf book-$(OUTFILE)-2x1.pdf
 
 html:
