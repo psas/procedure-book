@@ -5,6 +5,7 @@ title: PSAS Procedure Book
 
 Procedures:
 
+ - [DropTest](00-DropTest.html)
  - [LaunchTower](01-LaunchTower.html)
  - [LaunchTowerComputer](02-LaunchTowerComputer.html)
  - [Overnight](03-Overnight.html)
@@ -18,3 +19,4 @@ Procedures:
  - [PersonalSupplies](11-PersonalSupplies.html)
  - [Inventory](12-Inventory.html)
  - [RocketCart](13-RocketCart.html)
+
