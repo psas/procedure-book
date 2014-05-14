@@ -18,13 +18,15 @@ Starting with the Avionics Stack on the rocket cart. Assumption is that the batt
  1. After RNH powers up use fc-test to power on all ports.
     - See Rocket Cart Procedures
  1. After FC boots ssh to the FC as root
- 1. Git pull and build the FCF for flight
+ 1. Git pull the FCF repo
+ 1. Build the FCF for flight
  1. Clean the log directory
  1. Start the FCF code
  1. Verify FCF is logging and telemetry is streaming to the telemetry viewer
  1. Remove the Dev Umbilical Cable
  1. Wait for some time
  1. Gently wiggle the cart as a time marker
+ 1. Wait for some time
  1. Reattach the Dev Umbilical Cable
  1. ssh into the FC
  1. Stop the FCF
