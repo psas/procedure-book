@@ -84,8 +84,8 @@ TODO: pick one of the following two item clusters
 
 ### Login
 1. Open an SSH session
-  * IP Address (wireless): 192.168.128.250
-  * IP Address (wired): 192.168.128.251
+  * IP Address (wireless): 10.0.0.13
+  * IP Address (wired): 10.0.0.14
 
 Instructions fer setting up wifi:
 https://help.ubuntu.com/community/WifiDocs/WiFiHowTo
@@ -97,7 +97,7 @@ https://help.ubuntu.com/community/WifiDocs/WiFiHowTo
 
 1. Power up the BeagleBoard
 2. Begin pinging the IP address of the BeagleBoard to determine when
-   up.  (Currently: 192.168.128.250)
+   up.  (Currently: 10.0.0.13)
 3. Connect via SSH to BeagleBoard
 4. Login as root user
   * Username: root
