@@ -9,7 +9,7 @@ layout: base
 Image goes here
 
 
-## Field Setup
+## At the Tower Field Setup
 
 ### Tools Needed
 * Miniature flathead screwdriver
@@ -55,13 +55,6 @@ not fit.
    power switch is the illuminated red switch located above the fuse
    holder, *not* the one labeled "OFF/ON".)
 
-
-TODO: pick one of the following two item clusters
-1. Look for lights on devices to indicate operation 
-  * L7/L8/L9 should be flashing
-  * L2/L6 should light
-  * Note: if no lights – immediately turn off power and troubleshoot
-
 1. Verify that the following power-related indicator lights are
     illuminated:
   * LTC power switch
@@ -73,12 +66,15 @@ TODO: pick one of the following two item clusters
 ![LTC BeagleBoard Indicator Lights](diagrams/ltc_beagleboard_indicator_lights.png)
 1. Verify that the following indicator lights are illuminated:
   * USB hub power LED on BeagleBoard (green)
+1. Notify launch control that launch tower computer is powered on. Wait for verification.
+1. Replace bottom plate cover onto cable enclosure.
+1. Connect internal ignition battery. Verify with launch control.
 
+## At Launch Control Setup Support
 
-1. Replace bottom plate cover onto cable enclosure
-1. Connect internal ignition battery. (verify?)
-1. Begin login process for testing checkout
-
+1. Wait for notice of launch tower computer powerup. Connect to it and verify with launch tower team.
+1. Wait for notice of internal ignition battery connection. Verify proper voltage. Confirm with launch tower team.
+1. Begin launch tower computer pre-launch testing.
 
 ## Computer Setup
 
