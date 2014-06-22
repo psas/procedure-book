@@ -3,8 +3,11 @@ title: Launch Tower Computer (LTC) Setup And Configuration
 layout: base
 ---
 
-TODO: * Update for use with new umbilical cable design (Ethernet, etc.)
-      * Validate network config tables.
+# TODO
+
+* Update for use with new umbilical cable design (Ethernet, etc.)
+* Validate network config tables.
+* More details on LTC software start-up.
 
 
 # Launch Day Procedures
@@ -98,12 +101,13 @@ time.  If you attempt to insert all three at once, they will not fit.
 1. Ping the LTC's WiFi interface to determine availability.
 1. Open ssh session on LTC.  Login as "root".
 1. Start the Phidget web service:
-    # /phidgetwebservice/phidgetwebservice21 -v
+```
+# /phidgetwebservice/phidgetwebservice21 -v
+```
 1. Open another ssh session on LTC.  Login as "root".
   * A second session is necessary because the Phidget web service's
     "verbose" mode ties up the first session.
 6. Start launch tower computer software:
-  * TODO: More details.
 
 
 
@@ -134,15 +138,15 @@ ltc      | ltc
 
 Parameter | Value
 ----------|------
-WiFi IP Address | 192.168.128.250/24
-Ethernet IP Address | 192.168.128.251/24
+WiFi IP Address | 10.0.0.13
+Ethernet IP Address | 10.0.0.14
 
 
 ## LTC WiFi Access Point Configuration
 
 Parameter        | Value
 -----------------|------
-Channel          | 802.11b, Ch. 1
+Channel          | 802.11b ch. 1
 SSID             | psas
 WPA-2 Passphrase | psasrocket
 AP IP Address    | 192.168.128.1
@@ -152,11 +156,15 @@ DHCP Range       | 192.168.128.50 - 192.168.128.100
 
 ## Common LTC Commands
 
-Reboot computer without delay:
-    # reboot –t now
-
-Shut down computer without delay:
-    # poweroff –t now
-
-View IP addresses assigned to network interfaces:
-    # ip address show
+* Reboot computer without delay:
+```
+# reboot –t now
+```
+* Shut down computer without delay:
+```
+# poweroff –t now
+```
+* View IP addresses assigned to network interfaces:
+```
+# ip address show
+```
