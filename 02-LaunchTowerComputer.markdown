@@ -1,142 +1,162 @@
 ---
-title: Launch Tower Computer
+title: Launch Tower Computer (LTC) Setup And Configuration
 layout: base
 ---
 
-
-# Launch Tower Computer Setup And Configuration
-
-Image goes here
+TODO: * Update for use with new umbilical cable design (Ethernet, etc.)
+      * Validate network config tables.
 
 
-## At the Tower Field Setup
+# Launch Day Procedures
 
-### Tools Needed
+## Launch Tower Team
+
+1. Mount LTC enclosure to the launch tower.  (See "Mounting" section.)
+2. Connect LTC to external power.  (See "Power Connections" section.)
+3. Connect LTC to external data.  (See "Data Connections" section.)
+4. Power on LTC.  (See "Power-On" section.)
+
+
+## Launch Control Team
+
+1. Wait for notice of launch tower computer power-up from launch tower
+   team.  Open ssh session on LTC.  Notify launch tower team of
+   results.
+1. Wait for notice of ignition battery connection from launch tower
+   team.  Verify proper voltage.  Notify launch tower team of results.
+1. Begin LTC pre-launch test.
+
+
+
+# Procedure Details
+
+## Required Tools
+
 * Miniature flathead screwdriver
 * Miniature flathead screwdriver
 * Large Phillips screwdriver
 
-### Mounting On Tower
+
+## Mounting To Tower
+
 1. Mount LTC box to the launch tower.
-TODO: figure
 1. Turn power and arming switches on side bulkhead to *off*.
-![LTC Side Bulkhead](diagrams/ltc_side_bulkhead.png)
 1. Verify shorting bar is in place on side bulkhead.
 1. Check fuse on side bulkhead.
 1. Remove bottom plate cover from cable enclosure
-TODO: figure
-
-### Power Connections
-Note: Route each powerpole connector one at a time and they will fit
-through opening. If you attempt to run all three at once, they will
-not fit.
-
-1. Run Ignite leads through “bottom bulkhead” opening “A” and connect
-   to 3&4
-1. Run Battery leads though “bottom bulkhead” opening “A” and connect
-   to 1&2
-1. Run Solar Panel leads through “bottom bulkhead” opening “A” and
-   connect to 5&6
-![LTC Bottom Bulkhead Connectors](diagrams/ltc_bottom_bulkhead_connectors.png)
-1. Verify that the following red LEDs on the Power Int. Board are
-   illuminated:
-  * "SOLAR"
-  * "BATT"
-![LTC Power Board Indicator Lights](diagrams/ltc_power_board_indicator_lights.png)
-
-### Data Connections
-1. Connect rocket umbilical to “bottom bulkhead” receptor “B”
-1. Connect sensor data cable into “bottom bulkhead” receptor “C”
-1. Connect Wireless antenna cable to “bottom bulkhead” receptor “D”
 
 
-### Initialization
-1. Power on the LTC via the switch on the side bulkhead.  (The LTC's
+## Power Connections
+
+1. Run battery cables though bottom bulkhead opening A, and connect to
+   upper left Powerpole connectors.
+1. Run solar panel cables through bottom bulkhead opening A, and
+   connect to lower left Powerpole connectors.
+1. Run ignition cables through bottom bulkhead opening A, and connect
+   to upper right Powerpole ports.
+1. Verify that the following indicators are illuminated:
+  * "BATT" LED on the power interface board
+  * "SOLAR" LED on the power interface board
+
+NB: Insert power leads through the bottom bulkhead opening one at a
+time.  If you attempt to insert all three at once, they will not fit.
+
+
+## Data Connections
+
+1. Connect rocket umbilical cable to connector on lower left of bottom
+   bulkhead.
+1. Connect sensor data cable to connector on upper right of bottom
+   bulkhead.  [FIXME: Is this connector still used?  The wires appear
+   to be disconnected internally.]
+1. Connect WiFi antenna cable to connector on lower right of bottom
+   bulkhead.
+
+
+## Power-On
+
+1. Power on the LTC via the switch on the side bulkhead.  The LTC's
    power switch is the illuminated red switch located above the fuse
-   holder, *not* the one labeled "OFF/ON".)
-
-1. Verify that the following power-related indicator lights are
-    illuminated:
+   holder, *not* the one labeled "OFF/ON".
+1. Verify that the following indicators are illuminated:
   * LTC power switch
-  * "PWR" LED on Power Int. Board
-  * "5V" LED on Power Int. Board
-  * "PWR" LED on Ignition Board
+  * "PWR" LED on power interface board
+  * "5V" LED on power interface board
+  * "PWR" LED on ignition board
   * Power LED on BeagleBoard
-![LTC Ignition Board Indicator Lights](diagrams/ltc_ignition_board_indicator_lights.png)
-![LTC BeagleBoard Indicator Lights](diagrams/ltc_beagleboard_indicator_lights.png)
-1. Verify that the following indicator lights are illuminated:
-  * USB hub power LED on BeagleBoard (green)
-1. Notify launch control that launch tower computer is powered on. Wait for verification.
-1. Replace bottom plate cover onto cable enclosure.
-1. Connect internal ignition battery. Verify with launch control.
-
-## At Launch Control Setup Support
-
-1. Wait for notice of launch tower computer powerup. Connect to it and verify with launch tower team.
-1. Wait for notice of internal ignition battery connection. Verify proper voltage. Confirm with launch tower team.
-1. Begin launch tower computer pre-launch testing.
-
-## Computer Setup
-
-### Login
-1. Open an SSH session
-  * IP Address (wireless): 10.0.0.13
-  * IP Address (wired): 10.0.0.14
-
-Instructions fer setting up wifi:
-https://help.ubuntu.com/community/WifiDocs/WiFiHowTo
-    sh
-    sudo /etc/init.d/networking stop
-    sudo /etc/init.d/networking start
-
-### Start Up
-
-1. Power up the BeagleBoard
-2. Begin pinging the IP address of the BeagleBoard to determine when
-   up.  (Currently: 10.0.0.13)
-3. Connect via SSH to BeagleBoard
-4. Login as root user
-  * Username: root
-  * Password: psaslv1b 
-5. Start the Phidget web service (verbose)
-  * Because verbose flag any additional root control will require a
-    separate SSH connection
-  * /phidgetwebservice/phidgetwebservice21 -v
-6. Start launch tower computer software
+  * USB hub power LED on BeagleBoard
+1. Notify launch control team that LTC has been powered on.  Wait for
+   launch control team to confirm a remote connection to the LTC.
+1. Replace bottom bulkhead cover.
+1. Connect internal ignition battery.  Notify launch control team of
+   connection.
 
 
-## Common Commands
-Reboot Computer Instantly:
-    #reboot –t now
+## LTC Login
 
-Turn off computer instantly:
-    #poweroff –t now
-
-View IP Addresses assigned to interfaces:
-    #ip address show
-
-
-## Internal Connections
-
-### PowerPole Connection
-![PowerPole Connection](diagrams/Powerpole_Connection.png)
-
-### Umbilical Connection
-![Umbilical Connection](diagrams/Umbilical_Connection.png)
-
-### Phidgets
-![Phidgets](diagrams/Phidgets.png)
+1. Confirm LTC has been powered on.
+1. Ping the LTC's WiFi interface to determine availability.
+1. Open ssh session on LTC.  Login as "root".
+1. Start the Phidget web service:
+    # /phidgetwebservice/phidgetwebservice21 -v
+1. Open another ssh session on LTC.  Login as "root".
+  * A second session is necessary because the Phidget web service's
+    "verbose" mode ties up the first session.
+6. Start launch tower computer software:
+  * TODO: More details.
 
 
-## Internal Routing
 
-### LTC Connections Schematic
-![LTC Connections Schematic](diagrams/LTC_connections_schematic.png)
+# Reference
+
+## Figures
+
+![Side Bulkhead](diagrams/ltc/side_bulkhead.png)
+
+![Bottom Bulkhead](diagrams/ltc/bottom_bulkhead.png)
+
+![BeagleBoard](diagrams/ltc/beagleboard.png)
+
+![Power Interface Board](diagrams/ltc/power_interface_board.png)
+
+![Ignition Board](diagrams/ltc/ignition_board.png)
 
 
-## Bottom Bulkhead
-![Bottom Bulkhead](diagrams/Bottom_Bulkhead.png)
+## LTC User Accounts
+
+Username | Password
+---------|---------
+root     | psaslv1b
+ltc      | ltc
 
 
-## Side Bulkhead
-![Side Bulkhead](diagrams/Side_Bulkhead.png)
+## LTC Network Configuration
+
+Parameter | Value
+----------|------
+WiFi IP Address | 192.168.128.250/24
+Ethernet IP Address | 192.168.128.251/24
+
+
+## LTC WiFi Access Point Configuration
+
+Parameter        | Value
+-----------------|------
+Channel          | 802.11b, Ch. 1
+SSID             | psas
+WPA-2 Passphrase | psasrocket
+AP IP Address    | 192.168.128.1
+Static Range     | 192.168.128.10 - 192.168.128.40
+DHCP Range       | 192.168.128.50 - 192.168.128.100
+
+
+## Common LTC Commands
+
+Reboot computer without delay:
+    # reboot –t now
+
+Shut down computer without delay:
+    # poweroff –t now
+
+View IP addresses assigned to network interfaces:
+    # ip address show
