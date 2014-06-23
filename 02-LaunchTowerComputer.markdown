@@ -8,6 +8,7 @@ layout: base
 * Update for use with new umbilical cable design (Ethernet, etc.)
 * Validate network config tables.
 * More details on LTC software start-up.
+* Update "LTC Login" for use with tmux.
 
 
 # Launch Day Procedures
@@ -136,10 +137,10 @@ ltc      | ltc
 
 ## LTC Network Configuration
 
-Parameter | Value
-----------|------
-WiFi IP Address | 10.0.0.13
-Ethernet IP Address | 10.0.0.14
+Parameter                  | Value
+---------------------------|------
+WiFi (wlan0) IP Address    | 10.0.0.13
+Ethernet (eth0) IP Address | 10.0.0.14
 
 
 ## LTC WiFi Access Point Configuration
