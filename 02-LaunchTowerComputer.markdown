@@ -9,6 +9,9 @@ layout: base
 * Validate network config tables.
 * More details on LTC software start-up.
 * Update "LTC Login" for use with tmux.
+* Label bottom bulkhead diagram with "opening A".
+* In "Data Connections", step #2: Is this connector still used?  The
+  wires appear to be disconnected internally.
 
 
 # Launch Day Procedures
@@ -18,7 +21,7 @@ layout: base
 1. Mount LTC enclosure to the launch tower.  (See "Mounting" section.)
 2. Connect LTC to external power.  (See "Power Connections" section.)
 3. Connect LTC to external data.  (See "Data Connections" section.)
-4. Power on LTC.  (See "Power-On" section.)
+4. Apply power to LTC.  (See "Power-On" section.)
 
 
 ## Launch Control Team
@@ -47,17 +50,17 @@ layout: base
 1. Turn power and arming switches on side bulkhead to *off*.
 1. Verify shorting bar is in place on side bulkhead.
 1. Check fuse on side bulkhead.
-1. Remove bottom plate cover from cable enclosure
+1. Remove cover plate from bottom bulkhead.
 
 
 ## Power Connections
 
 1. Run battery cables though bottom bulkhead opening A, and connect to
-   upper left Powerpole connectors.
+   upper left Powerpole connector.
 1. Run solar panel cables through bottom bulkhead opening A, and
-   connect to lower left Powerpole connectors.
+   connect to lower left Powerpole connector.
 1. Run ignition cables through bottom bulkhead opening A, and connect
-   to upper right Powerpole ports.
+   to upper right Powerpole connector.
 1. Verify that the following indicators are illuminated:
   * "BATT" LED on the power interface board
   * "SOLAR" LED on the power interface board
@@ -71,15 +74,14 @@ time.  If you attempt to insert all three at once, they will not fit.
 1. Connect rocket umbilical cable to connector on lower left of bottom
    bulkhead.
 1. Connect sensor data cable to connector on upper right of bottom
-   bulkhead.  [FIXME: Is this connector still used?  The wires appear
-   to be disconnected internally.]
+   bulkhead.
 1. Connect WiFi antenna cable to connector on lower right of bottom
    bulkhead.
 
 
 ## Power-On
 
-1. Power on the LTC via the switch on the side bulkhead.  The LTC's
+1. Apply power to LTC via the switch on the side bulkhead.  The LTC's
    power switch is the illuminated red switch located above the fuse
    holder, *not* the one labeled "OFF/ON".
 1. Verify that the following indicators are illuminated:
@@ -91,7 +93,7 @@ time.  If you attempt to insert all three at once, they will not fit.
   * USB hub power LED on BeagleBoard
 1. Notify launch control team that LTC has been powered on.  Wait for
    launch control team to confirm a remote connection to the LTC.
-1. Replace bottom bulkhead cover.
+1. Replace bottom bulkhead cover plate.
 1. Connect internal ignition battery.  Notify launch control team of
    connection.
 
