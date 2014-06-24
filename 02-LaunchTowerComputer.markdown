@@ -104,9 +104,9 @@ time.  If you attempt to insert all three at once, they will not fit.
 1. Ping the LTC's WiFi interface to determine availability.
 1. Open ssh session on LTC.  Login as "root".
 1. Start the Phidget web service:
-```
-# /phidgetwebservice/phidgetwebservice21 -v
-```
+
+        # /phidgetwebservice/phidgetwebservice21 -v
+
 1. Open another ssh session on LTC.  Login as "root".
   * A second session is necessary because the Phidget web service's
     "verbose" mode ties up the first session.
@@ -131,43 +131,43 @@ time.  If you attempt to insert all three at once, they will not fit.
 
 ## LTC User Accounts
 
-Username | Password
----------|---------
-root     | psaslv1b
-ltc      | ltc
+ Username | Password
+ -------- | --------
+ root     | psaslv1b
+ ltc      | ltc
 
 
 ## LTC Network Configuration
 
-Parameter                  | Value
----------------------------|------
-WiFi (wlan0) IP Address    | 10.0.0.13
-Ethernet (eth0) IP Address | 10.0.0.14
+ Parameter                  | Value
+ -------------------------- | -----
+ WiFi (wlan0) IP Address    | 10.0.0.13
+ Ethernet (eth0) IP Address | 10.0.0.14
 
 
 ## LTC WiFi Access Point Configuration
 
-Parameter        | Value
------------------|------
-Channel          | 802.11b ch. 1
-SSID             | psas
-WPA-2 Passphrase | psasrocket
-AP IP Address    | 192.168.128.1
-Static Range     | 192.168.128.10 - 192.168.128.40
-DHCP Range       | 192.168.128.50 - 192.168.128.100
+ Parameter        | Value
+ ---------------- | -----
+ Channel          | 802.11b ch. 1
+ SSID             | psas
+ WPA-2 Passphrase | psasrocket
+ AP IP Address    | 192.168.128.1
+ Static Range     | 192.168.128.10 - 192.168.128.40
+ DHCP Range       | 192.168.128.50 - 192.168.128.100
 
 
 ## Common LTC Commands
 
-* Reboot computer without delay:
-```
-# reboot –t now
-```
-* Shut down computer without delay:
-```
-# poweroff –t now
-```
-* View IP addresses assigned to network interfaces:
-```
-# ip address show
-```
+ - Reboot computer without delay:
+
+        # reboot –t now
+
+ -  Shut down computer without delay:
+
+        # poweroff –t now
+
+ - View IP addresses assigned to network interfaces:
+
+        # ip address show
+

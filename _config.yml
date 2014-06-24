@@ -1,1 +1,3 @@
 exclude: [README.md,Makefile,make_index.py]
+
+markdown: kramdown
