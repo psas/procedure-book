@@ -9,9 +9,6 @@ layout: base
 * Validate network config tables.
 * More details on LTC software start-up.
 * Update "LTC Login" for use with tmux.
-* Label bottom bulkhead diagram with "opening A".
-* In "Data Connections", step #2: Is this connector still used?  The
-  wires appear to be disconnected internally.
 
 
 # Launch Day Procedures
