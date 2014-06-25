@@ -112,12 +112,14 @@ time.  If you attempt to insert all three at once, they will not fit.
 1. Open ssh session on LTC.  Login as "root".
 1. Start the Phidget web service:
 
-        # /phidgetwebservice/phidgetwebservice21 -v
+        # phidgetwebservice21 -v
 
 1. Open another ssh session on LTC.  Login as "root".
   * A second session is necessary because the Phidget web service's
     "verbose" mode ties up the first session.
-6. Start launch tower computer software:
+1. Start launch tower computer software:
+
+       > python launch-tower-comm.py
 
 ## Launch Tower Computer Poweroff Sequence
 
@@ -135,9 +137,7 @@ time.  If you attempt to insert all three at once, they will not fit.
 
 ## Figures
 
-
 ![Bottom Bulkhead](diagrams/ltc/bottom_bulkhead.png)
-
 
 ![Power Interface Board](diagrams/ltc/power_interface_board.png)
 
@@ -168,10 +168,9 @@ time.  If you attempt to insert all three at once, they will not fit.
  Channel          | 802.11b ch. 1
  SSID             | psas
  WPA-2 Passphrase | psasrocket
- AP IP Address    | 192.168.128.1
- Static Range     | 192.168.128.10 - 192.168.128.40
- DHCP Range       | 192.168.128.50 - 192.168.128.100
-
+ AP IP Address    | 10.0.0.1
+ Static Range     | 10.0.0.2 - 10.0.0.49
+ DHCP Range       | 10.0.0.50 - 10.0.0.249
 
 ## Common LTC Commands
 
