@@ -16,7 +16,16 @@ layout: base
 
 # Launch Day Procedures
 
-## Launch Tower Team
+## Equipment List
+* Launch tower computer box
+* 12 volt battery (motorcycle type)
+* Shorting bar
+* Bottom plate cover for cable enclosure
+* Solar Panels
+* Ignitor cables
+* debug wifi antenna for launch tower computer
+
+## Launch Tower Team Task Overview
 
 1. Mount LTC enclosure to the launch tower.  (See "Mounting" section.)
 2. Connect LTC to external power.  (See "Power Connections" section.)
@@ -43,7 +52,6 @@ layout: base
 * Miniature flathead screwdriver
 * Large Phillips screwdriver
 
-
 ## Mounting To Tower
 
 1. Mount LTC box to the launch tower.
@@ -51,7 +59,6 @@ layout: base
 1. Verify shorting bar is in place on side bulkhead.
 1. Check fuse on side bulkhead.
 1. Remove cover plate from bottom bulkhead.
-
 
 ## Power Connections
 
@@ -73,17 +80,15 @@ time.  If you attempt to insert all three at once, they will not fit.
 
 1. Connect rocket umbilical cable to connector on lower left of bottom
    bulkhead.
-1. Connect sensor data cable to connector on upper right of bottom
-   bulkhead.
 1. Connect WiFi antenna cable to connector on lower right of bottom
    bulkhead.
 
 
 ## Power-On
+![Side Bulkhead](diagrams/ltc/side_bulkhead.png)
+![BeagleBoard](diagrams/ltc/beagleboard.png)
 
-1. Apply power to LTC via the switch on the side bulkhead.  The LTC's
-   power switch is the illuminated red switch located above the fuse
-   holder, *not* the one labeled "OFF/ON".
+1. Turn on the LTC power switch. (It should illuminate)
 1. Verify that the following indicators are illuminated:
   * LTC power switch
   * "PWR" LED on power interface board
@@ -100,6 +105,8 @@ time.  If you attempt to insert all three at once, they will not fit.
 
 ## LTC Login
 
+1. Wait for notification of LTC poweron.
+1. Begin to ping the LTC on the wireless address.
 1. Confirm LTC has been powered on.
 1. Ping the LTC's WiFi interface to determine availability.
 1. Open ssh session on LTC.  Login as "root".
@@ -112,17 +119,25 @@ time.  If you attempt to insert all three at once, they will not fit.
     "verbose" mode ties up the first session.
 6. Start launch tower computer software:
 
+## Launch Tower Computer Poweroff Sequence
 
+1. Confirm filesystem is in read-only mode
+1. poweroff -t now
+1. Turn on power switch.
+1. Disconnect all the cables
 
 # Reference
 
+## Suggested Radio Responses
+
+1. LTC is connected to network: "I see your beagles coming in hot." -- Nathan
+1. Confirm LTC you heard LTC is up: "Copy. Hot dogs on the move." -- Theo
+
 ## Figures
 
-![Side Bulkhead](diagrams/ltc/side_bulkhead.png)
 
 ![Bottom Bulkhead](diagrams/ltc/bottom_bulkhead.png)
 
-![BeagleBoard](diagrams/ltc/beagleboard.png)
 
 ![Power Interface Board](diagrams/ltc/power_interface_board.png)
 
@@ -143,7 +158,8 @@ time.  If you attempt to insert all three at once, they will not fit.
  -------------------------- | -----
  WiFi (wlan0) IP Address    | 10.0.0.13
  Ethernet (eth0) IP Address | 10.0.0.14
-
+ USB Wifi Mac Address       | 00:c0:ca:32:b7:17
+ Ethernet Mac Address       | 2a:d3:77:aa:1e:f7
 
 ## LTC WiFi Access Point Configuration
 
