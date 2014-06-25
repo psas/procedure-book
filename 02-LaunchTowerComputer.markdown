@@ -135,6 +135,8 @@ time.  If you attempt to insert all three at once, they will not fit.
 1. LTC is connected to network: "I see your beagles coming in hot." -- Nathan
 1. Confirm LTC you heard LTC is up: "Copy. Hot dogs on the move." -- Theo
 
+![Hot Beagle](diagrams/hot_beagle.jpg)
+
 ## Figures
 
 ![Bottom Bulkhead](diagrams/ltc/bottom_bulkhead.png)
