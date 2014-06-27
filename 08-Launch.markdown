@@ -19,7 +19,8 @@ layout: base
      * Raspberry Pi camera ONE
      * Raspberry Pi camera TWO
      * Roll
-  1. Verify data streams through telemetry server
+  1. Verify data streams through telemetry server over trackmaster WiFi
+     link
   1. Send version commands to:
      * IMU
      * GPS
@@ -29,17 +30,6 @@ layout: base
      * Flight computer
      * Rocket net hub
 
-
-## Systems Checkout
-
- 1. Trackmaster on
- 1. ssh into rocket over ATG link
- 1. Run FCF
- 1. Verify
-    - data link
-    - logfiles
-    - video
-    - video recording
 
 ## Terminal Count
 
