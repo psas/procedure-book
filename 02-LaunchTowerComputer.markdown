@@ -3,7 +3,7 @@ title: Launch Tower Computer (LTC) Setup And Configuration
 layout: base
 ---
 
-# TODO
+## TODO
 
 * Update for use with new umbilical cable design (Ethernet, etc.)
 * Validate network config tables.
@@ -11,26 +11,26 @@ layout: base
 * Update "LTC Login" for use with tmux.
 
 
-# Launch Day Procedures
+## Launch Day Procedures
 
-## Equipment List
+### Equipment List
 * Launch tower computer box
 * 12 volt battery (motorcycle type)
 * Shorting bar
 * Bottom plate cover for cable enclosure
 * Solar Panels
 * Ignitor cables
-* debug wifi antenna for launch tower computer
+* debug: wifi antenna for launch tower computer
 
-## Launch Tower Team Task Overview
+### Launch Tower Team Task Overview
 
 1. Mount LTC enclosure to the launch tower.  (See "Mounting" section.)
-2. Connect LTC to external power.  (See "Power Connections" section.)
-3. Connect LTC to external data.  (See "Data Connections" section.)
-4. Apply power to LTC.  (See "Power-On" section.)
+1. Connect LTC to external power.  (See "Power Connections" section.)
+1. Connect LTC to external data.  (See "Data Connections" section.)
+1. Apply power to LTC.  (See "Power-On" section.)
 
 
-## Launch Control Team
+### Launch Control Team Task Overview
 
 1. Wait for notice of launch tower computer power-up from launch tower
    team.  Open ssh session on LTC.  Notify launch tower team of
@@ -40,16 +40,15 @@ layout: base
 1. Begin LTC pre-launch test.
 
 
+## Procedure Details
 
-# Procedure Details
-
-## Required Tools
+### Required Tools
 
 * Miniature flathead screwdriver
 * Miniature flathead screwdriver
 * Large Phillips screwdriver
 
-## Mounting To Tower
+### Mounting To Tower
 
 1. Mount LTC box to the launch tower.
 1. Turn power and arming switches on side bulkhead to *off*.
@@ -57,7 +56,9 @@ layout: base
 1. Check fuse on side bulkhead.
 1. Remove cover plate from bottom bulkhead.
 
-## Power Connections
+### Power Connections
+
+![Bottom Bulkhead](diagrams/ltc/bottom_bulkhead.png)
 
 1. Run battery cables though bottom bulkhead opening A, and connect to
    upper left Powerpole connector.
@@ -65,15 +66,13 @@ layout: base
    connect to lower left Powerpole connector.
 1. Run ignition cables through bottom bulkhead opening A, and connect
    to upper right Powerpole connector.
+1. Attach launch tower computer interlock box to LTC with caribiner
 1. Verify that the following indicators are illuminated:
   * "BATT" LED on the power interface board
   * "SOLAR" LED on the power interface board
 
-NB: Insert power leads through the bottom bulkhead opening one at a
-time.  If you attempt to insert all three at once, they will not fit.
 
-
-## Data Connections
+### Data Connections
 
 1. Connect rocket umbilical cable to connector on lower left of bottom
    bulkhead.
@@ -81,11 +80,11 @@ time.  If you attempt to insert all three at once, they will not fit.
    bulkhead.
 
 
-## Power-On
+### Power-On
 ![Side Bulkhead](diagrams/ltc/side_bulkhead.png)
 ![BeagleBoard](diagrams/ltc/beagleboard.png)
 
-1. Turn on the LTC power switch. (It should illuminate)
+1. Turn on the red LTC power switch on side bulkhead. (It should illuminate)
 1. Verify that the following indicators are illuminated:
   * LTC power switch
   * "PWR" LED on power interface board
@@ -93,48 +92,46 @@ time.  If you attempt to insert all three at once, they will not fit.
   * "PWR" LED on ignition board
   * Power LED on BeagleBoard
   * USB hub power LED on BeagleBoard
-1. Notify launch control team that LTC has been powered on.  Wait for
-   launch control team to confirm a remote connection to the LTC.
+1. Notify launch control team that LTC has been powered on.  Wait for launch
+   control team to confirm a remote connection to the LTC. (Ground team proceed
+   with LTC login procedures. Connect via Kivy and report.)
 1. Replace bottom bulkhead cover plate.
 1. Connect internal ignition battery.  Notify launch control team of
    connection.
 
 
-## LTC Login
+### LTC Login
 
 1. Wait for notification of LTC poweron.
 1. Begin to ping the LTC on the wireless address.
-1. Confirm LTC has been powered on.
-1. Ping the LTC's WiFi interface to determine availability.
 1. Open ssh session on LTC.  Login as "root".
-1. Start the Phidget web service:
+1. Start launch tower computer software:
+
+       > ./ltc.py
+
+1. If launch-tower-comm does not connect, you may need to start the
+   phidgetswebservice (it is automatically executed on system boot). To do
+   this, login as "root" and execute:  
 
         # phidgetwebservice21 -v
 
-1. Open another ssh session on LTC.  Login as "root".
-  * A second session is necessary because the Phidget web service's
-    "verbose" mode ties up the first session.
-1. Start launch tower computer software:
-
-       > python launch-tower-comm.py
-
-## Launch Tower Computer Poweroff Sequence
+### Launch Tower Computer Poweroff Sequence
 
 1. Confirm filesystem is in read-only mode
 1. poweroff -t now
 1. Turn on power switch.
 1. Disconnect all the cables
 
-# Reference
+## Reference
 
-## Suggested Radio Responses
+### Suggested Radio Responses
 
 1. LTC is connected to network: "I see your beagles coming in hot." -- Nathan
 1. Confirm LTC you heard LTC is up: "Copy. Hot dogs on the move." -- Theo
 
 ![Hot Beagle](diagrams/hot_beagle.jpg)
 
-## Figures
+### Figures
 
 ![Bottom Bulkhead](diagrams/ltc/bottom_bulkhead.png)
 
@@ -143,7 +140,7 @@ time.  If you attempt to insert all three at once, they will not fit.
 ![Ignition Board](diagrams/ltc/ignition_board.png)
 
 
-## LTC User Accounts
+### LTC User Accounts
 
  Username | Password
  -------- | --------
@@ -160,7 +157,7 @@ time.  If you attempt to insert all three at once, they will not fit.
  USB Wifi Mac Address       | 00:c0:ca:32:b7:17
  Ethernet Mac Address       | 2a:d3:77:aa:1e:f7
 
-## LTC WiFi Access Point Configuration
+### LTC WiFi Access Point Configuration
 
  Parameter        | Value
  ---------------- | -----
@@ -171,7 +168,7 @@ time.  If you attempt to insert all three at once, they will not fit.
  Static Range     | 10.0.0.2 - 10.0.0.49
  DHCP Range       | 10.0.0.50 - 10.0.0.249
 
-## Common LTC Commands
+### Common LTC Commands
 
  - Reboot computer without delay:
 
@@ -185,3 +182,10 @@ time.  If you attempt to insert all three at once, they will not fit.
 
         # ip address show
 
+ - Make filesystem read/write
+
+        # remount_root_rw
+
+## Contingencies
+
+### 
