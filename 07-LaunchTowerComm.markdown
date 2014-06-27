@@ -1,13 +1,19 @@
----
+--- 
 title: Launch Tower COMM
 layout: base
 ---
 
-# Launch Tower COMM
+# Launch Control Setup 
 
+## Telemetry Server
+
+1. Run telemtry server
+1. Connect to telemetry server
+
+## Connection and Login
 Include images of software in operation
 
-## Operation
+## Ignition instructions
 
  1. Make sure the launch tower computer is operational and on the network as specified in lauch-tower-computer.md
  1. From a computer on the ground network, run the kivy app with ./ltc.py found in the PSAS repo launch-tower-comm/launch-tower-comm
@@ -23,3 +29,11 @@ Include images of software in operation
  1. Once the popup ignite button has been pressed it will return to the Armed screen. When the LTC has confirmed that the igniter is active the Ignite button will turn blue and the status indicator will show "Ignited!" in teal text.
  1. Verify the rocket has launched. Visual cues include the rocket no longer being on the launch tower and a smoke trail leading off into the sky. Auditory cues include loud noises. 
  1. The LTCcom software will automatically turn off the igniter after 10 seconds. By pressing either the Ignite or Abort buttons the command to shut off the igniter can be sent early.
+
+ # Launch Control Hardware
+
+ ## Trackmaster 
+
+ 1. Plug in ethernet and power-over-ethernet (POE) injector.  
+
+ ## Contingencies

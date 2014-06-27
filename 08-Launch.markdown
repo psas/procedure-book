@@ -9,11 +9,26 @@ layout: base
 
  1. Get rocket on pad
  1. Attach umbilical
- 1. Run LTC client
- 1. Turn on shore power
- 1. Turn on FC
- 1. Turn on WiFi
- 1. Turn on ATV
+ 1. Run LTC-comm (chapter 7)
+ 1. Use LTC-com to turn on shore power
+ 1. Use commander to power on flight computer
+ 1. Attempt to verify telemetry
+ 1. Use commander to turn on the following
+     * IMU
+     * GPS
+     * Raspberry Pi camera ONE
+     * Raspberry Pi camera TWO
+     * Roll
+  1. Verify data streams through telemetry server
+  1. Send version commands to:
+     * IMU
+     * GPS
+     * Raspberry Pi camera ONE
+     * Raspberry Pi camera TWO
+     * Roll
+     * Flight computer
+     * Rocket net hub
+
 
 ## Systems Checkout
 
@@ -54,3 +69,11 @@ layout: base
  1. **ARM** rocket
  1. Start countdown
  1. Send ignite signal
+
+ ## Contingencies
+
+ ### SSH into flight computer
+
+ ### Checking running processes on FC
+
+ ### Debug wireless connection to FC
