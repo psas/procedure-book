@@ -37,3 +37,7 @@ Include images of software in operation
  1. Plug in ethernet and power-over-ethernet (POE) injector.  
 
  ## Contingencies
+
+ ### commander
+
+ * Should startup automatically
