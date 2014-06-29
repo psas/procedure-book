@@ -22,6 +22,6 @@ chapters.sort(key=lambda n: int(n.split('-')[0]))
 with open('index.markdown', 'w') as index:
     for chapter in chapters:
         n, title = chapter.split('-')
-        page += " - [{0}]({1}.html)\n".format(title, chapter)
+        page += " 1. [{0}]({1}.html)\n".format(title, chapter)
 
     index.write(page+"\n")
