@@ -5,15 +5,6 @@ layout: base
 
 # Launch Procedures
 
-## Launch Control Setup 
-
-## Telemetry Server
-
-1. Run telemtry server
-1. Connect to telemetry server
-
-## Connection and Login
-Include images of software in operation
 
 ## Ignition instructions
 
@@ -68,6 +59,30 @@ Include images of software in operation
      * Roll
      * Flight computer
      * Rocket net hub
+
+## Final Pre-Launch Procedures
+
+1. Lay out Ignition Extension Cable with 3 boxes.
+   - Motor Box ~7ft away from nozzle.
+   - Away Box as far as possible, but try to keep orange cord from being run over.
+1. Communicate with Launch Control for go-ahead to hook up igniter
+1. Clear all personnel other than L3
+1. Check Manual Arm switch on LTC is "off"
+1. Verify Banana shorting Jumper is well placed in LTC shorting block
+1. Verify Motor Box indicator is dark
+1. Verify alligator clips are connected to the motor box
+1. Insert motor igniter into motor
+1. Communicate with Launch Control that igniter is in.
+1. Connect the alligator clips to Igniter
+1. Switch Manual Arm Switch to **ON**
+1. Communicate with Launch Control that Arm Switch is on
+1. Remove Banana shorting jumper
+1. Move Away from the box
+1. Final check that area is clear of other personnel
+1. Verify that red LED in away box is OFF.
+1. Insert shorting jumper into the Away box
+1. Communicate with Launch Control that arming is complete
+1. Leave the Launch area (run away).
 
 
 ## Terminal Count

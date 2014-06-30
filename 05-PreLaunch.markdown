@@ -1,70 +1,107 @@
 ---
-title: On Tower Procedures
+title: Pre Launch
 layout: base
 ---
 
-# On Tower Procedures
+# Pre Launch
 
-## Tools for On Tower Procedures
+## Launch Control Setup
 
-  - Small flashlight to view inside aeroshell
-  - Spotting Tube, to block light while inspecting internal LEDs
-  - Medium flat-head screw driver, for main switches, make sure it will fit thru the aeroshell holes
+### Radio Checks
 
-## Pre-Launch
+ 1. 2 meter mobile on and locked on PSAS freq (see References)
+ 1. Sound-off personnel with HTs
+ 1. PSAS Linksys router up and running
+ 1. Setup Telemetry server
+ 1. Plug in TM3K
+    i. ping to verify
 
-1. Turn screw on camera module to extend camera outside the aeroshell. Go approximately until the black line is flush with the aeroshell. Do not over torque this.
-1. Verify that LaunchControl can control LTC and LTC is working.
-    i. Verify Igniters **NOT in**.
-    i. Attach 12v lightbulb to ignition leads.
-    i. Move shorting plug from LTC base to away box.
-    i. Turn red arming switch to on.
-    i. Launch Control run through full sequence (light goes on for ignition).
-    i. Turn red arming switch to off.
-    i. Move shorting plug from away box to LTC base.
 
-## Switches
+## Launch Tower Setup
+
+#### Tools for On Tower Procedures
+
+ - Small flashlight to view inside aeroshell
+ - Medium flat-head screw driver, for main switches, make sure it will fit thru the aeroshell holes
+
+### At Launch Tower  (In parallel  with At Launch Control)
+ 1. Verify Igniters **NOT in**
+ 1. Power on LTC 
+ 1. Call launch control for LTC update
+ 1. Attach umbilical cable
+ 1. Call launch control for FC update
+
+#### Switches
 
 ![Payload module switch layout](diagrams/switches.png)
 
-1. Turn on HD camera (SW 1)
-1. Turn on external camera (SW2)
-1. Roll Control.
-    i. Connect tether connector wire to roll control.
-    i. 10 second calibration to elapse, fins are twitching
-    i. Fins should go to neutral at completion of calibration sequence
-    i. Remove tether
-        - Wait 4 seconds, fins should sling to one side, 4 seconds later, to the other side and so on
-    i. Plug tether back in
-        - Should run calibration sequence again
 1. Turn on TeleMetrum (SW 4)
     i. Listen for beeps. 3 beeps good, low tone bad, 10 seconds Morse P ( .--. )
     i. Radio down to launch control to verify telemetry is streaming.
     i. Radio down to launch control to verify configuration coming from TeleMetrum is as expected.
 1. Turn on ARTs (SW 3), verify good beep code (3 beeps).
-1. Flight Director: Broadcast that Rocket is powered up and ready for flight.
+
+### At Launch Control (In parallel with At Launch Tower)
+
+ 1. Wait for call from tower that LTC is on
+ 1. Verify LTC (ping)
+ 1. Bring up
+    i. LTComm
+    i. Commander
+    i. Telemetry window
+       - Check for connected in top right
+ 1. Call tower to continue and attach umbilcal
+ 1. Using Commander default tab, check umbilical with RNH version command
+ 1. Using LTComm, turn on shore power
+      i. Look for shorepower voltage within nominal bounds in LTComm
+ 1. Using Commander RNH tab, **Turn on FC**
+ 1. Wait for FC to boot (about 30 seconds)
+ 1. Check telemetry server default tab and RNH tab for FC packets
+
+-----------------------------------------------------------
 
 
-## Final Pre-Launch Procedures
+At this point we are set up physicaly. The tower crew can come back to launch control if they need water or there is an expected wait time for launch.
 
-1. Lay out Ignition Extension Cable with 3 boxes.
-   - Motor Box ~7ft away from nozzle.
-   - Away Box as far as possible, but try to keep orange cord from being run over.
-1. Communicate with Launch Control for go-ahead to hook up igniter
-1. Clear all personnel other than L3
-1. Check Manual Arm switch on LTC is "off"
-1. Verify Banana shorting Jumper is well placed in LTC shorting block
-1. Verify Motor Box indicator is dark
-1. Verify alligator clips are connected to the motor box
-1. Insert motor igniter into motor
-1. Communicate with Launch Control that igniter is in.
-1. Connect the alligator clips to Igniter
-1. Switch Manual Arm Switch to **ON**
-1. Communicate with Launch Control that Arm Switch is on
-1. Remove Banana shorting jumper
-1. Move Away from the box
-1. Final check that area is clear of other personnel
-1. Verify that red LED in away box is OFF.
-1. Insert shorting jumper into the Away box
-1. Communicate with Launch Control that arming is complete
-1. Leave the Launch area (run away).
+## Pre Launch Software Testing
+
+ 1. Turn on all ports on the RNH using Commander
+ 1. Send version request and self test for each device using Commander default tab
+    i. RNH
+        -  Verify port faults for no unexpected errors
+    i. FC
+    i. IMU
+    i. Roll
+    i. RasPiCam 1
+    i. RasPiCam 2
+    i. GPS
+
+#### Working Checks
+
+ 1. RNH
+    i. Check telemetry viewer that port current draw is nominal
+    i. Verify that umbilical detect is detecting the umbilical
+    i. Verify battery is within nominal bounds and has no unexpected errors
+ 1. GPS
+    i. In telemetry viewer look for stats
+ 1. IMU
+    i. In telemetry viewer look for stats
+ 1. RasPiCam 1
+    i. Bring up streaming view and check stream
+ 1. RasPiCam 2
+    i. Bring up streaming view and check stream
+ 1. Roll
+    i. Run test through commander
+    i. Watch fin movement through RasPiCam stream
+
+#### Post check
+
+ 1. Turn off everything but GPS and RNH
+    i. FC     
+    i. IMU     
+    i. RasPiCam 1     
+    i. RasPiCam 2
+    i. Wifi PA
+    i. Roll
+
+
