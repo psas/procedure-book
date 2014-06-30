@@ -14,7 +14,7 @@ layout: base
  1. PSAS Linksys router up and running
  1. Setup Telemetry server
  1. Plug in TM3K
-    i. ping to verify
+    - ping to verify
 
 
 ## Launch Tower Setup
@@ -27,81 +27,74 @@ layout: base
 ### At Launch Tower  (In parallel  with At Launch Control)
  1. Verify Igniters **NOT in**
  1. Power on LTC 
- 1. Call launch control for LTC update
+ 1. _Call launch control for LTC update_
  1. Attach umbilical cable
- 1. Call launch control for FC update
-
-#### Switches
-
-![Payload module switch layout](diagrams/switches.png)
-
-1. Turn on TeleMetrum (SW 4)
-    i. Listen for beeps. 3 beeps good, low tone bad, 10 seconds Morse P ( .--. )
-    i. Radio down to launch control to verify telemetry is streaming.
-    i. Radio down to launch control to verify configuration coming from TeleMetrum is as expected.
-1. Turn on ARTs (SW 3), verify good beep code (3 beeps).
+ 1. _Call launch control for FC update_
 
 ### At Launch Control (In parallel with At Launch Tower)
 
  1. Wait for call from tower that LTC is on
  1. Verify LTC (ping)
  1. Bring up
-    i. LTComm
-    i. Commander
-    i. Telemetry window
+    - LTComm
+    - Commander
+    - Telemetry window
        - Check for connected in top right
- 1. Call tower to continue and attach umbilcal
- 1. Using Commander default tab, check umbilical with RNH version command
+ 1. _Call tower to continue and attach umbilcal_
+ 1. Using Commander check umbilical by sending RNH version request
  1. Using LTComm, turn on shore power
-      i. Look for shorepower voltage within nominal bounds in LTComm
+    - Look for shorepower voltage within nominal bounds in LTComm
  1. Using Commander RNH tab, **Turn on FC**
  1. Wait for FC to boot (about 30 seconds)
- 1. Check telemetry server default tab and RNH tab for FC packets
-
------------------------------------------------------------
+ 1. Check telemetry server for FC packets
 
 
 At this point we are set up physicaly. The tower crew can come back to launch control if they need water or there is an expected wait time for launch.
 
 ## Pre Launch Software Testing
 
- 1. Turn on all ports on the RNH using Commander
- 1. Send version request and self test for each device using Commander default tab
-    i. RNH
-        -  Verify port faults for no unexpected errors
-    i. FC
-    i. IMU
-    i. Roll
-    i. RasPiCam 1
-    i. RasPiCam 2
-    i. GPS
+### Power up
 
-#### Working Checks
+ 1. Turn on all ports on the RNH using Commander
+ 1. Send version request and self test for each device using Commander
+    1. RNH
+        -  Verify port faults for no unexpected errors
+    1. FC
+    1. IMU
+    1. Roll
+    1. RasPiCam 1
+    1. RasPiCam 2
+    1. GPS
+
+### Working Checks
 
  1. RNH
-    i. Check telemetry viewer that port current draw is nominal
-    i. Verify that umbilical detect is detecting the umbilical
-    i. Verify battery is within nominal bounds and has no unexpected errors
- 1. GPS
-    i. In telemetry viewer look for stats
+    1. Check telemetry viewer that port current draw is nominal
+    1. Verify that umbilical detect is detecting the umbilical
+    1. Verify battery is within nominal bounds and has no unexpected errors
  1. IMU
-    i. In telemetry viewer look for stats
+    1. In telemetry viewer look for data
  1. RasPiCam 1
-    i. Bring up streaming view and check stream
+    1. Bring up streaming view and check stream
  1. RasPiCam 2
-    i. Bring up streaming view and check stream
+    1. Bring up streaming view and check stream
  1. Roll
-    i. Run test through commander
-    i. Watch fin movement through RasPiCam stream
-
-#### Post check
-
- 1. Turn off everything but GPS and RNH
-    i. FC     
-    i. IMU     
-    i. RasPiCam 1     
-    i. RasPiCam 2
-    i. Wifi PA
-    i. Roll
+    1. Use commander to send Roll test command
+    1. Watch fin movement through RasPiCam stream
+ 1. GPS
+    1. In telemetry viewer wait for good GPS Lock
 
 
+## Post Check Power Down
+
+ 1. SSH into the flight computer via LTC
+ 1. Manually stop the FCF service
+ 1. Purge the log files
+ 1. Set any and all flags to FLIGHT
+ 1. Shutdown FC
+ 1. Power off everything but RNH
+    1. Use Commander to send **All Off** command
+ 1. Check that shore power is still on in LTComm
+ 1. Purge Telemetry logs and restart the telemetry server
+
+Now ready to continue to final launch countdown as window conditions allow.

@@ -5,6 +5,17 @@ layout: base
 
 # Launch Procedures
 
+## At Launch Tower
+
+#### Switches
+
+![Payload module switch layout](diagrams/switches.png)
+
+1. Turn on TeleMetrum (SW 4)
+    1. Listen for beeps. 3 beeps good, low tone bad, 10 seconds Morse P ( .--. )
+    1. Radio down to launch control to verify telemetry is streaming.
+    1. Radio down to launch control to verify configuration coming from TeleMetrum is as expected.
+1. Turn on ARTs (SW 3), verify good beep code (3 beeps).
 
 ## Ignition instructions
 
