@@ -22,7 +22,7 @@ layout: base
 * Ignitor cables
 * debug: wifi antenna for launch tower computer
 
-### Launch Tower Team Task Overview
+### Launch Tower Team Task Overview (not a checklist)
 
 1. Mount LTC enclosure to the launch tower.  (See "Mounting" section.)
 1. Connect LTC to external power.  (See "Power Connections" section.)
@@ -30,7 +30,7 @@ layout: base
 1. Apply power to LTC.  (See "Power-On" section.)
 
 
-### Launch Control Team Task Overview
+### Launch Control Team Task Overview (not a checklist)
 
 1. Wait for notice of launch tower computer power-up from launch tower
    team.  Open ssh session on LTC.  Notify launch tower team of
@@ -44,7 +44,6 @@ layout: base
 
 ### Required Tools
 
-* Miniature flathead screwdriver
 * Miniature flathead screwdriver
 * Large Phillips screwdriver
 
@@ -79,11 +78,29 @@ layout: base
 1. Connect WiFi antenna cable to connector on lower right of bottom
    bulkhead.
 
+### Launch Control Preparation for LTC Bring Up
+
+1. Wait for notification of LTC poweron.
+1. Begin to ping the LTC on the wireless address.
+1. Start launch tower computer software:
+
+       > ./ltc.py
+
+1. Point your browser to `ltc.psas.lan` to use commander.
+1. Wait for launch-tower-comm to connect. 
+1. If launch-tower-comm does not connect, you may need to start the
+   phidgetswebservice (it is automatically executed on system boot). To do
+   this, login as "root":
+  - Open ssh session on LTC.  Login as "root".
+   and execute:  
+
+        # phidgetwebservice21 -v
 
 ### Power-On
 ![Side Bulkhead](diagrams/ltc/side_bulkhead.png)
 ![BeagleBoard](diagrams/ltc/beagleboard.png)
 
+1. Launch control prepares for LTC bring up. Notifies launch tower to proceed.
 1. Turn on the red LTC power switch on side bulkhead. (It should illuminate)
 1. Verify that the following indicators are illuminated:
   * LTC power switch
@@ -97,23 +114,7 @@ layout: base
    with LTC login procedures. Connect via Kivy and report.)
 1. Replace bottom bulkhead cover plate.
 1. Connect internal ignition battery.  Notify launch control team of
-   connection.
-
-
-### LTC Login
-
-1. Wait for notification of LTC poweron.
-1. Begin to ping the LTC on the wireless address.
-1. Open ssh session on LTC.  Login as "root".
-1. Start launch tower computer software:
-
-       > ./ltc.py
-
-1. If launch-tower-comm does not connect, you may need to start the
-   phidgetswebservice (it is automatically executed on system boot). To do
-   this, login as "root" and execute:  
-
-        # phidgetwebservice21 -v
+   connection. Wait for confirmation.
 
 ### Launch Tower Computer Poweroff Sequence
 
