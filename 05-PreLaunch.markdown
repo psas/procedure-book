@@ -87,7 +87,7 @@ At this point we are set up physicaly. The tower crew can come back to launch co
 
 ## Post Check Power Down
 
- 1. SSH into the flight computer via LTC
+ 1. SSH into the flight computer
  1. Manually stop the FCF service
  1. Purge the log files
  1. Set any and all flags to FLIGHT
