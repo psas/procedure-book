@@ -5,6 +5,24 @@ layout: base
 
 # Launch Procedures
 
+ 1. Turn on all payloads on rocket on tower
+ 1. Man the trackmaster
+ 1. Using Commander issue all on to RNH
+ 1. Check for RNH port failures
+ 1. Verify telemetry is streaming
+ 1. Shorepower off
+ 1. Issue arm
+ 1. Issue RRDY
+ 1. get RRDY status
+ 1. Ignite
+
+ 1. Verify tower is not on fire
+
+
+
+
+
+
 ## At Launch Tower
 
 #### Switches
