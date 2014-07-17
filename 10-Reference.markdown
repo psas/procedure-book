@@ -10,7 +10,6 @@ layout: base
 Standard comm frequencies:
 
  - 2-meter: **146.430 MHz**
- - FRS/GMRS: **Channel 5**
 
 ### Call Signs
 
@@ -30,7 +29,11 @@ Standard comm frequencies:
 
 ## Network
 
-![Network Diagram](diagrams/LV2_3_Network.png)
+![Network Diagram](diagrams/network_diagram.png )
+
+## Frequncies
+
+![Frequency Allocation](diagrams/spectrum.png)
 
 ### Ground
 

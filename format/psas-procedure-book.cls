@@ -4,11 +4,11 @@
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{letter}}
 \ProcessOptions\relax
-\LoadClass[10pt]{book}
+\LoadClass[12pt]{book}
 
 %----------------------------------------------------------------------------%
 
-\RequirePackage[paperwidth=5.5in,paperheight=8.5in,inner=1in,outer=0.5in,top=0.75in,bottom=0.75in]{geometry}
+\RequirePackage[paperwidth=8.5in,paperheight=11in,inner=2in,outer=1in,top=1in,bottom=1in]{geometry}
 \usepackage{paralist}
 	\let\itemize\compactitem
 	\let\enditemize\endcompactitem
