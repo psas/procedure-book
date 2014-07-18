@@ -1,7 +1,9 @@
 ---
-title: ARTS-2
+title: Rocket Button Up
 layout: base
 ---
+
+# Final Rocket Button Up
 
 ## ARTS-2
 
@@ -25,53 +27,28 @@ layout: base
  1. Verify Profile 1 is configured to deploy drogue at apogee, and main at 1000ft, with a 50hz sample rate. You can 'Load from Alt', and verify these numbers, and 'Save to Alt'. When saving to alt for profile 1, you'll hear 1 beep.
  1. Verify Profile 2 is configured do deploy channel 1 at apogee, channel 2 at 1000ft, and a 50 hz rate... Just to be safe, save this to the altimeter. When saving to alt for profile 2, you'll hear 2 beeps.
 
-# Payload Checkout
-
-## Camera Block
-
-1. Apply 12 V to Payload
-    - Red LED comes on ATV overlay board
-    - ~190 mA
-1. Power on GearCam
-    - LEDs (top of camera block) Red, Blue slow blink
-    - ~500 mA
-1. Power down
-1. Check files on SD cards
-
-
-# Buttonup
 
 ## Payload Module
 
 ### Pre-Assembly
 
-1. Charge
-    - TeleMetrum
-1. Check Battery voltages
+ 1. Check Battery voltages
     - ARTS
+    - TeleMetrum
+
 
 ### Assembly
 
-**Note:**
-
-_If the erector set has to be removed, the black ABS camera block has to be removed (4 8/32 bolts 3/32 hex heads)._
-
-1. Cabling:
-    - 12 V up (red/black) from ATV power breakout
-    - A/V/GND down from camera (blue connector)
-    - Pyro (to recovery) must go up channels to not interfere with camera module.
-    - Large camera connector should be in the camera sled (so it can be attached later)
-1. Check 9 V leads are terminated into ARTS and TeleMetrum
-    - ARTS
-    - TeleMetrum
-1. Aeroshell:
-    i. Slide aeroshell down so the square hole lines up with the APS in the front of the camera sled
-    i. Slide until flush with top of module
-1. Camera block
-    i. Double check SD card is in place and tapped in.
-    i. Check USB in place
-    i. Turn camera block upside-down and attach keyed connector
-    i. Get cable into the grove and start to slide it in without pinching
-    i. Slide camera block all the way in. There is a little spring in the last couple mm
-    i. Insert 4 8/32 buttonhead screws with washers.
-    i. Check HD cam is facing out the back ~ 1 mm
+ 1. Cabling:
+    - PWM cable to roll control servo
+    - RNH To RasPiCam in payload bay
+    - Screw in connectos
+    - RasPiCam to 360 camera connector
+    - Pyro (to recovery) must go up channels to not interfere with camera module
+ 1. Check 9 V leads are terminated into ARTS
+ 1. Aeroshell:
+    1. Slide aeroshell down so the square hole lines up with the APS in the front of the camera sled
+    1. Slide until flush with top of module
+ 1. Camera block
+    1. Double check SD card is in place and tapped in.
+    1. Screw in camera block

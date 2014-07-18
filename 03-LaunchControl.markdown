@@ -1,3 +1,8 @@
+---
+title: Launch Control Setup
+layout: base
+---
+
 # Launch Control Setup
 
 ## Equipment List
@@ -32,9 +37,9 @@
  1. Hookup batteries to charger and inverter
  1. Stand up and assemble the radio tower
  1. Run feed lines to attennas and stations
-     - VHF base
-     - Ground Control AP
+    - VHF base station
+    - Launch Control AP
  1. Poweron everything
-     - Inverter
-     - VHF Base
-     - Launch Control AP
+    - Inverter
+    - VHF Base station
+    - Launch Control AP

@@ -1,12 +1,12 @@
 ---
-title: Overnight Checklist
+title: Sleep Prep
 layout: base
 ---
 
 
-# Overnight Checklist
+# Sleep Prep
 
  - Charge Opal Data Logger
  - Charge TeleMetrum
- - Charge Roll Control
-
+ - Turn Off LTC
+ - Bring batteries inside for temperature stability

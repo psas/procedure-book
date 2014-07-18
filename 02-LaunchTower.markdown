@@ -1,9 +1,9 @@
 ---
-title: Launch Tower
+title: Launch Tower Setup
 layout: base
 ---
 
-# Launch Tower
+# Launch Tower Setup
 
 Overview:
 
@@ -16,9 +16,9 @@ Overview:
  1. Put top and bottom tower pieces together, aligning the A, B, C indicators, with 1/4-20 hex bolts/nuts
  1. Put base of tower on
  1. Mount rail alignment brackets
-	i. Loose fit launch rail alignment brackets, look for markings on the brackets and on the tower
-    i. Lay mount launch rail to pivot point, and lay down to align brackets, then tighten brackets in place
-   	i. Remove launch rail.
+    1. Loose fit launch rail alignment brackets, look for markings on the brackets and on the tower
+    1. Lay mount launch rail to pivot point, and lay down to align brackets, then tighten brackets in place
+    1. Remove launch rail.
  1. Pre-string ropes from the top tower piece toward the bottom, including quick-links that will be used to tie to rail. Be sure the put the rope through the middle of the tower
  1. Set end of tower on ladder to raise top from ground
  1. Mount the antenna and antenna bar

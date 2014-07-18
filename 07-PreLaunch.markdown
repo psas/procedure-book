@@ -17,21 +17,25 @@ layout: base
     - ping to verify
 
 
-## Launch Tower Setup
+## Procudures for LAUNCH TOWER
 
 #### Tools for On Tower Procedures
 
  - Small flashlight to view inside aeroshell
  - Medium flat-head screw driver, for main switches, make sure it will fit thru the aeroshell holes
 
-### At Launch Tower  (In parallel  with At Launch Control)
+### LTC On
+
  1. Verify Igniters **NOT in**
- 1. Power on LTC 
+ 1. Power on LTC
  1. _Call launch control for LTC update_
  1. Attach umbilical cable
  1. _Call launch control for FC update_
 
-### At Launch Control (In parallel with At Launch Tower)
+
+## Procudures for LAUNCH CONTROL
+
+### LTC On
 
  1. Wait for call from tower that LTC is on
  1. Verify LTC (ping)
