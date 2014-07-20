@@ -24,6 +24,10 @@ layout: base
  - Small flashlight to view inside aeroshell
  - Medium flat-head screw driver, for main switches, make sure it will fit thru the aeroshell holes
 
+
+### Mount Rocket to Tower
+ 1. Takes about an hour
+
 ### At Launch Tower  (In parallel  with At Launch Control)
  1. Verify Igniters **NOT in**
  1. Power on LTC 
