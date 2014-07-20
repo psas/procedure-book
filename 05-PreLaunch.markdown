@@ -53,17 +53,18 @@ layout: base
     - Telemetry window
        - Check for connected in top right
  1. _Call tower to continue and attach umbilcal_
+ 1. _Wait for tower to confirm conduct umbilical connector disconnector test via radio_
+ 1. When Away team has completed umbilical connector disconnector test, verify using telemetry that the umbilical has disconnected
+ 1. _Call tower to confirm we see detached umbilical_
+ 1. Check for umbilical reattachment. 
  1. Using Commander check umbilical by sending RNH version request
  1. Using LTComm, turn on shore power
     - Look for shorepower voltage within nominal bounds in LTComm
  1. Using Commander RNH tab, **Turn on FC**
  1. Wait for FC to boot (about 30 seconds)
+ 1. Verify Trackmaster power amp is on
+ 1. Turn on rocket wifi power amp
  1. Check telemetry server for FC packets
- 1. _Wait for tower to confirm conduct umbilical connector disconnector test via radio_
- 1. When Away team has completed umbilical connector disconnector test, verify using telemetry that the umbilical has disconnected
- 1. _Call tower to confirm we see detached umbilical_
- 1. Check for umbilical reattachment. 
-
 
 At this point we are set up physicaly. The tower crew can come back to launch control if they need water or there is an expected wait time for launch.
 
