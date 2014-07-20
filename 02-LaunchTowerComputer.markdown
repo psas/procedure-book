@@ -28,7 +28,7 @@ layout: base
 1. Connect LTC to external power.  (See "Power Connections" section.)
 1. Connect LTC to external data.  (See "Data Connections" section.)
 1. Apply power to LTC.  (See "Power-On" section.)
-
+1. Attach Ignition battery.
 
 ### Launch Control Team Task Overview (not a checklist)
 
