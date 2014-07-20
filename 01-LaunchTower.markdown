@@ -10,6 +10,9 @@ Overview:
 ![Launch tower overview](diagrams/launch_tower_labled.png)
 
 
+## Materials
+ - Sand Screws
+
 ## Setup
 
  1. Lay top tower and bottom tower end-to-end on ground, at 120 degrees off center such that antenna boom will point down during lifting

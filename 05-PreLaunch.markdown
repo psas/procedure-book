@@ -21,9 +21,13 @@ layout: base
 
 #### Tools for On Tower Procedures
 
+ - Procedure book
  - Small flashlight to view inside aeroshell
  - Medium flat-head screw driver, for main switches, make sure it will fit thru the aeroshell holes
-
+ - Flight Umbilical cable
+ - Motor box
+   - Igniters
+   - Dowel for igniter
 
 ### Mount Rocket to Tower
  1. Takes about an hour
@@ -35,6 +39,9 @@ layout: base
  1. _Call launch control for LTC update_
  1. Attach umbilical cable
  1. _Call launch control for FC update_
+ 1. Test umbilical connector disconnector disconnects correctly by physically lifting the rocket on the launch rail.
+ 1. _Call launch control to verify that they saw umbilical disconnect_
+ 1. Reattach Umbilical
 
 ### At Launch Control (In parallel with At Launch Tower)
 
@@ -52,6 +59,10 @@ layout: base
  1. Using Commander RNH tab, **Turn on FC**
  1. Wait for FC to boot (about 30 seconds)
  1. Check telemetry server for FC packets
+ 1. _Wait for tower to confirm conduct umbilical connector disconnector test via radio_
+ 1. When Away team has completed umbilical connector disconnector test, verify using telemetry that the umbilical has disconnected
+ 1. _Call tower to confirm we see detached umbilical_
+ 1. Check for umbilical reattachment. 
 
 
 At this point we are set up physicaly. The tower crew can come back to launch control if they need water or there is an expected wait time for launch.
