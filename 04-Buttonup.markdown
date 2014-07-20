@@ -41,6 +41,20 @@ layout: base
 
 # Buttonup
 
+## Avionics Module
+
+### Firmware
+ 1. Begin with the Avionics stack outside of the CPA airframe section.
+ 1. Build the following stm32 projects in flight configuration (in the individual project directory `make flight`). Your repo should not have any uncommited changes.
+   - flight-gps
+   - flight-imu
+   - flight-rnh
+   - flight-servo
+ 1. Connect JTAG debugger to each of the physical microcontroller boards in turn and flash the correct firmware to it using `make write_stl`.
+ 1. Using Commander turn on each of the boards.
+ 1. Use telnet to verify that the boards are talking and return the correct version string.
+    - All versions should have the flight- prefix, have the same 7 character hash, and not have M appended to the end.
+
 ## Payload Module
 
 ### Pre-Assembly
