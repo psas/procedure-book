@@ -89,3 +89,7 @@ _If the erector set has to be removed, the black ABS camera block has to be remo
     i. Slide camera block all the way in. There is a little spring in the last couple mm
     i. Insert 4 8/32 buttonhead screws with washers.
     i. Check HD cam is facing out the back ~ 1 mm
+
+
+# Post Assembly tests
+ 1. Verify Rocketready works using the dev umbilical cable
