@@ -4,7 +4,8 @@ layout: base
 ---
 
 # Launch Procedures
-
+ 1. Remove all `Remove Before Flight` tags
+ 1. Check for any excess tape
  1. Turn on all payloads on rocket on tower
  1. Man the trackmaster
  1. Using Commander issue all on to RNH
