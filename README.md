@@ -1,7 +1,8 @@
+![cover](http://psas.github.io/procedure-book/format/procedurebook_cover.png)
+
 # PSAS Launch 11 Procedure Book
  
 Standard Operating Procedures, reference, and support documentation for
-[L-11]()
 
 <http://psas.github.io/procedure-book/>
 

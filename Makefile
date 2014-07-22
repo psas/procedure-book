@@ -5,7 +5,7 @@ PFLAGS = --variable=documentclass=format/psas-procedure-book \
 		 --include-before-body=format/prefix.tex \
          --parse-raw \
          --chapters \
-         -N --smart -s --toc \
+         -N --smart -s \
          --to=latex+yaml_metadata_block
 
 

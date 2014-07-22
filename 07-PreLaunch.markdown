@@ -17,7 +17,7 @@ layout: base
     - ping to verify
 
 
-## Launch Tower Setup
+## Procudures for LAUNCH TOWER
 
 #### Tools for On Tower Procedures
 
@@ -29,13 +29,12 @@ layout: base
    - Igniters
    - Dowel for igniter
 
-### Mount Rocket to Tower
+#### LTC On
  1. Takes about an hour
 
-### At Launch Tower  (In parallel  with At Launch Control)
  NOTE: LTC was on well before the rocket was mounted to the tower, we should rethink timing
  1. Verify Igniters **NOT in**
- 1. Power on LTC 
+ 1. Power on LTC
  1. _Call launch control for LTC update_
  1. Attach umbilical cable
  1. _Call launch control for FC update_
@@ -43,7 +42,10 @@ layout: base
  1. _Call launch control to verify that they saw umbilical disconnect_
  1. Reattach Umbilical
 
-### At Launch Control (In parallel with At Launch Tower)
+
+## Procudures for LAUNCH CONTROL
+
+### LTC On
 
  1. Wait for call from tower that LTC is on
  1. Verify LTC (ping)
