@@ -31,8 +31,7 @@ layout: base
 
 #### LTC On
  1. Takes about an hour
-
- NOTE: LTC was on well before the rocket was mounted to the tower, we should rethink timing
+    - NOTE: LTC was on well before the rocket was mounted to the tower, we should rethink timing
  1. Verify Igniters **NOT in**
  1. Power on LTC
  1. _Call launch control for LTC update_
