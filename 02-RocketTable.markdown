@@ -33,13 +33,13 @@ Start with the Avionics Stack on the rocket cart and batteries charged
     - On off switch on battery cable
  1. `ping 10.10.10.5`
     - Actually talking to the RocketNet Hub
- 1. Run [commander](https://github.com/psas/commander) on your laptop.
-    - Suggested to run this in a virtualenv
+ 1. Connect to [commander](https://github.com/psas/commander) running on the nuc from  your laptop.
+    - Open a browser to the ip of the NUC, port 5000
 
 ## In commander
  1. RNH tab -> click "[1] FC On"
     - Click only this, nothing else!
-    - Wait for flight computer to boot and establish networking (about 40 seconds?)
+    - Wait for flight computer to boot and establish networking (about 40 seconds? ping 10.10.10.10)
  1. Boot up other services
     - Do *NOT* click "[6] Wifi PA On"
     - Click other on buttons and verify blinky lights for each board
