@@ -58,3 +58,10 @@ layout: base
   1. A little later a blue blinky light on the clear box
   1. Green light on the board by the antenna
 1. Data should be coming in to ground.psas.lan
+
+## Getting video from the raspicams
+
+1. Get the flight computer running via Commander
+1. Boot up raspicam1 from Commander
+1. Make sure the trackmaster is running
+1. Open VLC on your laptop and connect to `rtsp://10.0.0.3:8554/`
