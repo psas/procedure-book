@@ -34,7 +34,7 @@ Start with the Avionics Stack on the rocket cart and batteries charged
  1. `ping 10.10.10.5`
     - Actually talking to the RocketNet Hub
  1. Connect to [commander](https://github.com/psas/commander) running on the nuc from  your laptop.
-    - Open a browser to the ip of the NUC, port 5000
+    - Open a browser to <http://ground.psas.lan:5000/>
 
 ## In commander
  1. RNH tab -> click "[1] FC On"
