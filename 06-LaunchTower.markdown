@@ -23,7 +23,7 @@ With the exception of a impact wrench or angle drill, this should be a tool-less
 ## Setup
 
  1. Lay tower sections on the ground, aligining the 'rail up' labels so they are all going the same direction.
-    ![Launch Tower Setup](tower_images/IMG_20150621_150333.jpg|width=400px)
+    ![Launch Tower Setup](tower_images/IMG_20150621_150333.jpg)
  1. Connect the sections of the tower, placing the 3 tapered pins into the respective holes and inserting the retainer snap that is attached to the string below.
     ![Launch Tower Setup](tower_images/IMG_20150621_150555.jpg)
     ![Launch Tower Setup](tower_images/IMG_20150621_150607.jpg)
