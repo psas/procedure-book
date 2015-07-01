@@ -7,18 +7,23 @@ layout: base
 
 Overview:
 
-![Launch tower overview](diagrams/launch_tower_labled.png)
-
 With the exception of a impact wrench or angle drill, this should be a tool-less setup. If you think you need to use a tool, look for the labels on the tower.
 
 ## Materials
- - Sand Screws
+ - 3 Sand Screws
+ - 3 Tower sections
+ - 3 ratchet straps
+ - Umbilica Bar
+ - Antenna Bar
+ - Launch Rail
+ - Antenna bar adjustment bar
+ - One small stake
  - Impact wrench or right angle drill.
 
 ## Setup
 
  1. Lay tower sections on the ground, aligining the 'rail up' labels so they are all going the same direction.
-    ![Launch Tower Setup](tower_images/IMG_20150621_150333.jpg)
+    ![Launch Tower Setup](tower_images/IMG_20150621_150333.jpg|width=400px)
  1. Connect the sections of the tower, placing the 3 tapered pins into the respective holes and inserting the retainer snap that is attached to the string below.
     ![Launch Tower Setup](tower_images/IMG_20150621_150555.jpg)
     ![Launch Tower Setup](tower_images/IMG_20150621_150607.jpg)
@@ -63,6 +68,7 @@ With the exception of a impact wrench or angle drill, this should be a tool-less
     ![Launch Tower Setup](tower_images/IMG_20150621_153139.jpg)
    1. To unlock the ratchet strap, rotate the handle all the way back to the 180 degree position.
       ![Launch Tower Setup](tower_images/IMG_20150621_152546.jpg)
+ 1. Hammer a steak into the small hole in the base plate of the tower.
  1. Adjust the angle of the antenna and tie off the antenna adjustment string to the cleats.
     ![Launch Tower Setup](tower_images/IMG_20150621_152710.jpg)
     ![Launch Tower Setup](tower_images/IMG_20150621_152719.jpg)
