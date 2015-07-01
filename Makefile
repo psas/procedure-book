@@ -31,7 +31,7 @@ pdf:
 
 jekyll:
 	./make_index.py
-	jekyll
+	jekyll build
 
 booklet:
 	#pdfcrop $(OUTFILE).pdf --noclip --margins 10
