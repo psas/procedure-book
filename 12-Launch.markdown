@@ -35,6 +35,7 @@ layout: base
 
  1. With Rocket on pad and preped (see: Pre-Launch)
  1. Use commander to power all on
+ 1. Clear FC log files
  1. Attempt to verify telemetry
  1. Use commander to turn on the following
     - IMU
