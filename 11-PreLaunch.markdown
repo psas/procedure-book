@@ -101,6 +101,8 @@ At this point we are set up physicaly. The tower crew can come back to launch co
     1. Watch fin movement through RasPiCam stream
  1. GPS
     1. In telemetry viewer wait for good GPS Lock
+ 1. Full system check:
+    1. With IMU on, rotate the rocket about all axises for the IMU calibration procedure 
 
 
 ## Post Check Power Down
@@ -114,5 +116,5 @@ At this point we are set up physicaly. The tower crew can come back to launch co
     1. Use Commander to send **All Off** command
  1. Check that shore power is still on in LTComm
  1. Purge Telemetry logs and restart the telemetry server
-
+ 1. Attach recovery and motor modules
 Now ready to continue to final launch countdown as window conditions allow.

@@ -65,6 +65,9 @@ layout: base
  1. Camera block
     1. Double check SD card is in place and tapped in.
     1. Screw in camera block
-
+ 1. Recovery:
+    1. Leave off until 11-PreLaunch
+ 1. Motor Module:
+    1. Attach spincan/motor mount but leave motor out until 11-PreLaunch
 # Post Assembly tests
  1. Verify Rocketready works using the dev umbilical cable
