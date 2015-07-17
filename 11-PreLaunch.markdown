@@ -29,7 +29,7 @@ layout: base
    - Igniters
    - Dowel for igniter
 
-#### LTC On (takes about an hour)
+#### LTC On
  1. Verify Igniters **NOT in**
  1. Power on LTC
  1. _Call launch control for LTC update_
