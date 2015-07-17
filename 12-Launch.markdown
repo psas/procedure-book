@@ -7,7 +7,7 @@ layout: base
 
 ## Procedures for LAUNCH CONTROL
 
-### Trackmaster 
+### Trackmaster
 
  1. Plug in ethernet and power-over-ethernet (POE) injector.  
 
@@ -67,27 +67,32 @@ Proceded to Terminal Count
     - Away Box as far as possible, but try to keep orange cord from being run over.
  1. _Call with Launch Control for go-ahead to hook up igniter_
  1. Clear all personnel other than L3
- 1. Check Manual Arm switch on LTC is "off"
+ 1. Check Manual Arm switch on LTC is off.
+ 1. Check that the LTC igniter relay is off.
+ 1. Check that the RocketReadyRelay is off.
  1. Verify short bar/launch key is in place
+ 1. Check that the Away Box is empty (no shorting bar) and the light is off.
+ 1. Check that the LTC igniter relay and the RocketReadyRelay are off.
+ 1. Verify alligator clips are connected to the motor box.
+ 1. Insert motor igniter into motor.
+ 1. _Call Launch Control that igniter is in_ and confirm they understand..
  1. Verify Motor Box indicator is dark
- 1. Verify alligator clips are connected to the motor box
- 1. Insert motor igniter into motor
- 1. _Call Launch Control that igniter is in_
- 1. Connect the alligator clips to Igniter
+ 1. Connect the alligator clips to Igniter.
  1. Switch Manual Arm Switch to **ON**
- 1. _Call Launch Control that Arm Switch is on_
- 1. Remove short bar/launch key
- 1. Move Away from the box
- 1. Final check that area is clear of other personnel
+ 1. _Call Launch Control that Arm Switch is on_. Verify LC understands.
+ 1. Remove short bar/launch key.
+ 1. Move Away from the box.
+ 1. Final check that area is clear of other personnel.
  1. Verify that red LED in away box is OFF.
  1. Insert shorting jumper into the Away box
- 1. _Call Launch Control that arming is complete_
  1. Leave the Launch area (**run away**).
+ 1. _Call Launch Control that arming is complete_. Verify LC understands.
 
 
 ## Terminal Count
 
  1. Clear area for launch
+    - All observers should look and affirm that no one is close enough to the tower that it's a problem.
  1. Check ground
     - Telemetry
     - Video
@@ -100,12 +105,14 @@ Proceded to Terminal Count
  1. Go/No-go poll
     - LTC (launch tower comm app)
     - Recovery (radio leads)
-    - TeleMetrium
+    - TeleMetrum
     - Video
     - Trackmaster
     - Telemetry
     - FCF
     - FD
+    - RSO
+ 1. Turn on siren and light.
  1. Start countdown (30 seconds)
  1. Send ignite signal (T-0)
 
