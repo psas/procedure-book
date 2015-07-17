@@ -17,7 +17,7 @@ layout: base
     - ping to verify
 
 
-## Procudures for LAUNCH TOWER
+## Procedures for LAUNCH TOWER
 
 #### Tools for On Tower Procedures
 
