@@ -5,22 +5,6 @@ layout: base
 
 # LAUNCH
 
-**Launch Procedure Overview**
- 1. Remove all `Remove Before Flight` tags
- 1. Check for any excess tape
- 1. Turn on recovery system
- 1. Man the trackmaster
- 1. Using Commander issue all on to RNH
- 1. Check for RNH port failures
- 1. Verify telemetry is streaming
- 1. Shorepower off
- 1. Issue ARM
- 1. Issue RRDY
- 1. get RRDY status
- 1. Ignite
- 1. Verify tower is not on fire
-
-
 ## Procedures for LAUNCH CONTROL
 
 ### Trackmaster 
