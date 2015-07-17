@@ -9,12 +9,14 @@ layout: base
 
 **Equipment List**
 
- - Launch tower computer box
- - 12 volt battery (motorcycle type)
- - Shorting bar/launch key
+ - Launch tower computer
+ - 2x 12 volt batteries with Anderson PowerPole (APP) connectors
  - Solar Panel
- - Ignitor cables
- - debug: wifi antenna for launch tower computer
+ - LTC Field Box
+    - Ignitor cables
+    - APP cables
+    - Shorting bar (sometimes called "launch key", but really called "shorting bar")
+    - N connector coax for LTC antenna
 
 **Required Tools**
 
@@ -26,7 +28,9 @@ layout: base
 
  1. **Mount** LTC box to the launch tower.
  1. Turn power and arming switches on side bulkhead to **off**.
+    - Verify that the arming switch actually turns off using the DMM in "beep" mode
  1. Verify shorting bar is in place on side bulkhead.
+    - Verify that shorting bar actually shorts using the DMM in "beep" mode.
  1. Check fuse on side bulkhead.
 
 
@@ -37,6 +41,7 @@ layout: base
  1. Run **battery cables** though bottom bulkhead opening A, and connect to upper left Powerpole connector.
  1. Run **solar panel cables** through bottom bulkhead opening A, and connect to lower left Powerpole connector.
  1. Run **ignition cables** through bottom bulkhead opening A, and connect to upper right Powerpole connector.
+    - Verify that the Away Box is empty (there's no shorting bar in it).
  1. Attach launch tower computer interlock box to LTC with caribiner
  1. Verify that the following indicators are illuminated:
     - **BATT** LED on the power interface board
