@@ -29,6 +29,9 @@ pdf:
 	pdftk format/procedurebook_cover.pdf format/blank.pdf procedures.pdf format/blank.pdf cat output $(OUTFILE).pdf
 	rm -f procedures.pdf
 
+pamphlet:
+	pdflatex format/pamphlet.tex
+
 jekyll:
 	./make_index.py
 	jekyll build
@@ -46,6 +49,6 @@ html:
 	pandoc $(HFLAGS) $(BOOKS) -o procedure-book.html
 
 clean:
-	rm -f procedures.pdf procedure-book.pdf procedure-book.html $(OUTFILE)_print.pdf
+	rm -f procedures.pdf procedures.tex procedure-book.pdf procedure-book.html $(OUTFILE)_print.pdf
 	rm -f $(OUTFILE)-crop.pdf $(OUTFILE)-crop.ps book-$(OUTFILE).ps book-$(OUTFILE).pdf book-$(OUTFILE)-2x1.pdf
-
+	rm -f pamphlet.log pamphlet.aux
