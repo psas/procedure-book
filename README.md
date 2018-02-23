@@ -1,6 +1,6 @@
-![cover](http://psas.github.io/procedure-book/format/procedurebook_cover.png)
+![cover](format/procedurebook_cover.png)
 
-# PSAS Launch 11 Procedure Book
+# PSAS Launch 13 Procedure Book
  
 Standard Operating Procedures, reference, and support documentation for
 
@@ -9,34 +9,39 @@ Standard Operating Procedures, reference, and support documentation for
 
 ## Editing
 
-The raw book files are
-[markdown](http://daringfireball.net/projects/markdown/syntax). Please keep each
-major secion in it's own file for easier managment.  Files can be editied in
-place using github's web interface, or simply clone the repo and open the files
-in your favorite text editor.
+The raw book files are [markdown](http://daringfireball.net/projects/markdown/syntax). 
+Please keep each major secion in it's own file for easier managment. 
+Files can be editied in place using github's web interface, or simply clone the repo and open the files in your favorite text editor.
 
 
 
 ## Building Book Locally
+Everything requires:
 
+- LaTeX
+- [pandoc](http://johnmacfarlane.net/pandoc/README.html) installed with LaTeX support.  
+	**NOTE**: pandoc > 1.12.1 required to use the yaml_metadata_block format in common with jekyll
 
-### Prerequisites
-
-LaTeX and 
-[pandoc](http://johnmacfarlane.net/pandoc/README.html) installed with LaTeX
-support.
-
-**NOTE**: pandoc > 1.12.1 required to use the yaml_metadata_block format in
-common with jekyll
-
-
-### Build
+### US Letter size sheets for a binder
 
 	$ make pdf
 
-For a booklet (printable full duplex on US Letter paper, to be folded in half
-and staple bound.  This requires a fair amount of non standard pdf and ps tools
-(sorry) check the Makefile and error ouput for hints.
+### Booklet
+After running `make pdf`:
 
-    $ make booklet
+	$ make booklet
 
+This is a printable full duplex on US Letter paper, to be folded in half and staple bound.
+It requires the following packages:
+
+- Poppler (`poppler-utils`)
+- `psutils`
+
+### Pamphlet
+After running `make pdf`:
+
+	$ make pamphlet
+
+This is the same idea as the booklet, but only requires the `pdfpages` LaTeX package,
+which your LaTeX installation probably already has.
+It also preserves the true font size of the text.

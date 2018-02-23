@@ -1,13 +1,22 @@
 BOOKS:=$(shell ls *-*.markdown)
 
-PFLAGS = --variable=documentclass=format/psas-procedure-book \
+PFLAGSB = --variable=documentclass=format/psas-procedure-book \
          --variable mainfont=Ariel \
 		 --include-before-body=format/prefix.tex \
          --parse-raw \
          --chapters \
+	 --toc\
          -N --smart -s \
          --to=latex+yaml_metadata_block
 
+PFLAGSP = --variable=documentclass=format/psas-procedure-pamphlet \
+         --variable mainfont=Ariel \
+		 --include-before-body=format/prefix.tex \
+         --parse-raw \
+         --chapters \
+	 --toc\
+         -N --smart -s \
+         --to=latex+yaml_metadata_block
 
 HFLAGS = --include-in-header=format/header.html \
          --include-before-body=format/pre.html \
@@ -22,14 +31,17 @@ OUTFILE = procedure-book
 all: clean latex booklet html
 
 latex:
-	pandoc $(PFLAGS) $(BOOKS) -o procedures.tex
+	pandoc $(PFLAGSB) $(BOOKS) -o procedures.tex
 
 pdf:
-	pandoc $(PFLAGS) $(BOOKS) -o procedures.pdf
+	pandoc $(PFLAGSB) $(BOOKS) -o procedures.pdf
 	pdftk format/procedurebook_cover.pdf format/blank.pdf procedures.pdf format/blank.pdf cat output $(OUTFILE).pdf
 	rm -f procedures.pdf
 
 pamphlet:
+	pandoc $(PFLAGSP) $(BOOKS) -o procedures.pdf
+	pdftk format/procedurebook_cover.pdf format/blank.pdf procedures.pdf format/blank.pdf cat output $(OUTFILE).pdf
+	rm -f procedures.pdf
 	pdflatex format/pamphlet.tex
 
 jekyll:
@@ -51,4 +63,4 @@ html:
 clean:
 	rm -f procedures.pdf procedures.tex procedure-book.pdf procedure-book.html $(OUTFILE)_print.pdf
 	rm -f $(OUTFILE)-crop.pdf $(OUTFILE)-crop.ps book-$(OUTFILE).ps book-$(OUTFILE).pdf book-$(OUTFILE)-2x1.pdf
-	rm -f pamphlet.log pamphlet.aux
+	rm -f pamphlet.log pamphlet.aux pamphlet.pdf

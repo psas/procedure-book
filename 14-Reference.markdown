@@ -35,6 +35,7 @@ Standard comm frequencies:
  - `KF7NLF` Kenny
  - `KG7DBF` Gavin
  - `KG7EYD` K
+ - `KI7PYZ` Joe
 
 ## Frequncies
 
