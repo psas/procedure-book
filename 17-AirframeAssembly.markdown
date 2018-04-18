@@ -1,11 +1,11 @@
-#Supplies
+# Supplies
 **Boxes**
 - LV3 Box
 - LV3 Small Hardware
 
-##1. Rocket Stand
+## 1. Rocket Stand
 - Verify that the stand is assembled and correctly tightened.
-###2. Assembling Rocket
+### 2. Assembling Rocket
 - Verify that the protection rings are removed prior to assembly.
 - Torque Settings: 40 in/oz
 - First 3 screws as equilateral triangle (every other hole, the order doesn't matter.)
@@ -13,7 +13,7 @@
 - Put in the spider before attaching the motor.
 - Spider can be a little finicky. Wiggle it.
 - Make sure the washers go back to their spots.
-####3. Sequence 1
+#### 3. Sequence 1
 - **Tape on the key to the motor casing**
 - Take the protective rings off the motor module and the fin can.
 - Remove the bottom protective ring from the fin can.
