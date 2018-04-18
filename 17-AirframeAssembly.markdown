@@ -59,3 +59,6 @@ Flight Computer
 - The ENSR sub assembly will already have the nose cone attached.
 - **Need to re-make one of the top layers of the rail sleds.**
 
+
+
+**NOTE: All bolded text was from sticky notes**
