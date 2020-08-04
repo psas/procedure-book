@@ -1,17 +1,21 @@
 .DEFAULT_GOAL := pamphlet.pdf
 SHELL=/usr/bin/env bash
 DEPENDS=pandoc pdflatex bc echo rm# also the pdfpages package in LaTeX
-PAMP_FOLD_SPACE=0.5# inches
+PAMP_FOLD_SPACE=0# inches
+#PAMP_INNER=$(shell echo 'scale=3;$(PAMP_FOLD_SPACE) * 2' | bc)# pamphlet inner margin
+PAMP_INNER=1# inches, pamphlet inner margin
+PAMP_OTHER=0.75# inches, pamphlet top/bottom/outer margins
 PAMP_PHYS_WIDTH=11# inches
 PAMP_PHYS_HEIGHT=8.5# inches
 PAMP_LOGI_WIDTH=$(shell echo 'scale=3;($(PAMP_PHYS_WIDTH) - $(PAMP_FOLD_SPACE))/2' | bc)
 PAMP_LOGI_HEIGHT=$(PAMP_PHYS_HEIGHT)
 PAMP_FRAME=true# whether to draw a frame around logical pages in the pamphlet (for debugging)
-PD_FLAGS = --variable=documentclass=format/psas-procedure-book \
-		   --variable mainfont=Ariel \
-		   --include-before-body=format/prefix.tex \
+TEX_BODY_PREFIX=format/prefix.tex
+PD_FLAGS = --variable mainfont=Ariel \
            --top-level-division=chapter \
            --number-sections \
+		   #--include-before-body=$(TEX_BODY_PREFIX) \
+		   #--variable=documentclass=format/psas-procedure-book \
 		   #--standalone \
            #--to=latex#+yaml_metadata_block
            #--parse-raw \
@@ -22,7 +26,7 @@ CHAPTERS=$(shell basename --suffix .md --multiple $(CHAPTERS_MD))
 CHAPTERS_TEX=$(shell ls *-*.md | sed 's/.md$$/.tex/')
 CHAPTERS_PDF=$(shell ls *-*.md | sed 's/.md$$/.pdf/')
 
-%.tex: %.md
+%.tex: %.md $(TEX_BODY_PREFIX)
 	# using generic TEX recipe
 	pandoc $^ -o $@ $(PD_FLAGS)
 
@@ -30,18 +34,32 @@ CHAPTERS_PDF=$(shell ls *-*.md | sed 's/.md$$/.pdf/')
 	# using generic PDF recipe
 	pdflatex $^ $(PDFLATEX_FLAGS)
 
-procedures.tex: pandoc -o $@ $(CHAPTERS_MD) $(PD_FLAGS)
+procedures.tex: $(CHAPTERS_MD)  $(TEX_BODY_PREFIX)
+	pandoc -o $@ $(CHAPTERS_MD) $(PD_FLAGS)
 
-book_procedures.pdf: $(CHAPTERS_MD)
-	pandoc -o $@ $(CHAPTERS_MD)
+book_procedures.pdf: $(CHAPTERS_MD) $(TEX_BODY_PREFIX) format/psas-procedure-book.cls
+	pandoc -o $@ $(CHAPTERS_MD) $(PD_FLAGS) \
+		--table-of-contents --toc-depth=2 \
+		--variable=documentclass=format/psas-procedure-book 
 
 book.pdf: book_procedures.pdf format/book.tex format/blank.pdf format/procedurebook_cover.pdf
 	# build the binder-style book
 	pdflatex format/book.tex $(PDFLATEX_FLAGS)
 
-pamphlet_procedures.pdf: $(CHAPTERS_MD) Makefile
+psas-procedure-pamphlet.cls: format/psas-procedure-pamphlet.cls Makefile
+	cat format/psas-procedure-pamphlet.cls > psas-procedure-pamphlet.cls
+	echo '\RequirePackage[ ' >> $@
+	echo 'paperwidth=$(PAMP_LOGI_WIDTH)in,paperheight=$(PAMP_LOGI_HEIGHT)in, ' >> $@
+	echo 'inner=$(PAMP_INNER)in,outer=$(PAMP_OTHER)in,top=$(PAMP_OTHER)in,bottom=$(PAMP_OTHER)in ' >> $@
+	echo ']{geometry}' >> $@
+		
+
+pamphlet_procedures.pdf: $(CHAPTERS_MD) Makefile psas-procedure-pamphlet.cls
 	# rendering the content for the pamphlet
-	pandoc -o $@ $(CHAPTERS_MD) -V geometry:paperwidth=$(PAMP_LOGI_WIDTH)in -V geometry:paperheight=$(PAMP_LOGI_HEIGHT)in
+	pandoc -o $@ $(CHAPTERS_MD) \
+		--table-of-contents --toc-depth=1 \
+		--variable=documentclass=psas-procedure-pamphlet 
+		#-V geometry:paperwidth=$(PAMP_LOGI_WIDTH)in -V geometry:paperheight=$(PAMP_LOGI_HEIGHT)in \
 
 pamphlet_pages.pdf: pamphlet_procedures.pdf format/pamphlet_pages.tex format/blank.pdf format/procedurebook_cover.pdf Makefile
 	# concatenating the pages for the pamphlet
@@ -65,7 +83,7 @@ pamphlet.pdf: pamphlet_pages.pdf pamphlet.tex
 .PHONY: clean checkDepends test echoVars
 
 clean:
-	-rm *.tex *.pdf *.aux *.log
+	-rm *.tex *.pdf *.aux *.log psas-procedure-pamphlet.cls
 
 checkDepends:
 	type $(DEPENDS)
