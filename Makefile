@@ -5,10 +5,10 @@ PAMP_FOLD_SPACE=0# inches
 #PAMP_INNER=$(shell echo 'scale=3;$(PAMP_FOLD_SPACE) * 2' | bc)# pamphlet inner margin
 PAMP_INNER=1# inches, pamphlet inner margin
 PAMP_OTHER=0.75# inches, pamphlet top/bottom/outer margins
-PAMP_PHYS_WIDTH=11# inches
-PAMP_PHYS_HEIGHT=8.5# inches
-PAMP_LOGI_WIDTH=$(shell echo 'scale=3;($(PAMP_PHYS_WIDTH) - $(PAMP_FOLD_SPACE))/2' | bc)
-PAMP_LOGI_HEIGHT=$(PAMP_PHYS_HEIGHT)
+PAMP_PHYS_WIDTH=11# inches, physical width of a printed sheet
+PAMP_PHYS_HEIGHT=8.5# inches, physical height of a printed sheet
+PAMP_LOGI_WIDTH=$(shell echo 'scale=3;($(PAMP_PHYS_WIDTH) - $(PAMP_FOLD_SPACE))/2' | bc)# inches, width of a logical page
+PAMP_LOGI_HEIGHT=$(PAMP_PHYS_HEIGHT)# inches, height of a logical page
 PAMP_FRAME=true# whether to draw a frame around logical pages in the pamphlet (for debugging)
 TEX_BODY_PREFIX=format/prefix.tex
 PD_FLAGS = --variable mainfont=Ariel \
@@ -21,10 +21,12 @@ PD_FLAGS = --variable mainfont=Ariel \
            #--parse-raw \
 		   # --smart 
 PDFLATEX_FLAGS=#-interaction=batchmode
-CHAPTERS_MD=$(shell ls *-*.md)
+CHAPTERS_MD=$(shell ls src/*-*.md)
 CHAPTERS=$(shell basename --suffix .md --multiple $(CHAPTERS_MD))
 CHAPTERS_TEX=$(shell ls *-*.md | sed 's/.md$$/.tex/')
 CHAPTERS_PDF=$(shell ls *-*.md | sed 's/.md$$/.pdf/')
+BROWSER=firefox# browser to preview the site
+PORT=4040# port to preview the site on
 
 %.tex: %.md $(TEX_BODY_PREFIX)
 	# using generic TEX recipe
@@ -87,6 +89,10 @@ clean:
 
 checkDepends:
 	type $(DEPENDS)
+
+siteDev:
+	firefox http://localhost:$(PORT)/
+	jekyll serve --watch --livereload --port $(PORT) 
 
 test:
 	echo 'scale=3;($(PAMP_PHYS_HEIGHT) - $(PAMP_FOLD_SPACE))/2' | bc
