@@ -1,3 +1,4 @@
+# common LaTeX auxilliary outputs
 *.acn
 *.acr
 *.alg
@@ -32,10 +33,20 @@
 *.xdy
 *.tdo
 
+# stuff created by Jekyll
+_site/
+
+# old Makefile targets
 procedure-book.pdf
 procedures.pdf
 procedures.tex
 procedure-book.html
 procedure-book_print.pdf
 pamphlet.pdf
-_site/
+
+# Makefile targets
+book.pdf
+book_procedures.pdf
+pamphlet.tex
+pamphlet_pages.pdf
+pamphlet_procedures.pdf
