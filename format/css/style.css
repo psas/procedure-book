@@ -13,6 +13,7 @@ h2 { font-weight: bold; font-size: 26px; border-bottom: 1px dashed #bbb; margin-
 h3 { font-weight: bold; font-size: 19px; border: none; }
 p, li { font-size: 17px; }
 li { line-height: 1.5em; }
+img { max-width: 100% !important;}
 
 
 #content .check {

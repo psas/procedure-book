@@ -35,6 +35,7 @@
 
 # stuff created by Jekyll
 _site/
+.jekyll-cache/
 
 # old Makefile targets
 procedure-book.pdf
