@@ -8,8 +8,10 @@ layout: base
 - [X] organizing the chapters so they don't spam up the top level dir
 
 ## general
-- [ ] identify procedures that are no longer relevant to LV3
 - [ ] Create a nomenclature section (acronyms you'd need to know on a launch weekend)
+- [ ] create TODOs for each existing chapter
+    - [ ] identify procedures that are no longer relevant to LV3
+    - [ ] add "caution" and "danger" callouts for steps that are dangerous to hardware and people, respectively
 
 ## launch tower
 - [ ] shrink the existing images to not be excessively large

@@ -41,6 +41,7 @@ procedures.tex: $(CHAPTERS_MD)  $(TEX_BODY_PREFIX)
 
 book_procedures.pdf: $(CHAPTERS_MD) $(TEX_BODY_PREFIX) format/psas-procedure-book.cls
 	pandoc -o $@ $(CHAPTERS_MD) $(PD_FLAGS) \
+		--resource-path=src\
 		--table-of-contents --toc-depth=2 \
 		--variable=documentclass=format/psas-procedure-book 
 
@@ -59,9 +60,10 @@ psas-procedure-pamphlet.cls: format/psas-procedure-pamphlet.cls Makefile
 pamphlet_procedures.pdf: $(CHAPTERS_MD) Makefile psas-procedure-pamphlet.cls
 	# rendering the content for the pamphlet
 	pandoc -o $@ $(CHAPTERS_MD) \
+		--resource-path=src\
 		--table-of-contents --toc-depth=1 \
 		--variable=documentclass=psas-procedure-pamphlet 
-		#-V geometry:paperwidth=$(PAMP_LOGI_WIDTH)in -V geometry:paperheight=$(PAMP_LOGI_HEIGHT)in \
+		#-V geometry:paperwidth=$(PAMP_LOGI_WIDTH)in -V geometry:paperheight=$(PAMP_LOGI_HEIGHT)in 
 
 pamphlet_pages.pdf: pamphlet_procedures.pdf format/pamphlet_pages.tex format/blank.pdf format/procedurebook_cover.pdf Makefile
 	# concatenating the pages for the pamphlet

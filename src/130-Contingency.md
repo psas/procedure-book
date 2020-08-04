@@ -7,11 +7,11 @@ layout: base
 A contingency is what you do when things don't go as planned.
 Keep these things safe, ordered from most important to least important:
 
-1. People
-1. Flight hardware
-1. Flight data
-1. Ground support equipment
-1. Tools
+People  
+Flight hardware  
+Flight data  
+Ground support equipment  
+Tools
 
 ## Medical Emergency
 A medical emergency is anything that requires an ER or urgent care visit.
