@@ -1,5 +1,6 @@
 ---
-layout: base
+layout: simple
+title: README
 ---
 ![cover](format/procedurebook_cover.png)
 
@@ -29,7 +30,7 @@ between 500 and 1000 px on the longest edge, and less than 1 MB.
 This helps keep the repo small and reduce load times.
 It can make a big difference when you're in the desert, sipping data through a 3G cell connection.
 
-Check out [TODO.md](/TODO) if you're looking for ways to contribute.
+Check out `TODO.md` in the repo if you're looking for ways to contribute.
 
 ## Building Locally
 These dependencies should all be available on your package manager of choice: 

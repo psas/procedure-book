@@ -13,3 +13,5 @@ The dashes in the liquid tags are necessary to make the whitespace work out corr
 {% for page in pages %}
 1. [{{ page.title -}}]({{- page.url -}})
 {%- endfor %}
+
+For the sake of being meta, you can follow these links for the [TODO](/TODO) list and the [README](/README) for this procedure book.

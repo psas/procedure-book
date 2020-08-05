@@ -1,19 +1,91 @@
 /* Sticky CSS Footer */
-html, body, .wrapper { height: 100%; margin: 0; padding: 0; }
-body > .wrapper { height: auto; min-height: 100%; }
-#content { padding-top: 50px; padding-bottom: 250px; }
-#footer { clear: both; position: relative; z-index: 10; height: 150px; margin-top: -150px; padding-top: 20px;}
+html, body, .wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body > .wrapper {
+    height: auto;
+    min-height: 100%;
+}
+#content {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#footer { 
+    text-align: right;
+    margin-bottom: 50px;
+}
 
-#footer { background: #eee; }
-#header { position: fixed; top: 0; left: 0; width: 100%; background: #f06; color: #fff; }
-#header h1 { font-weight: 700; text-transform: none; font-size: 25px; border: none; padding-right: 20px; }
+#header { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background: #f06; 
+    color: #fff; 
+}
+#header h1 { 
+    font-weight: 700; 
+    text-transform: none; 
+    font-size: 25px; 
+    border: none; 
+    padding-right: 20px; 
+}
 
-h1 { font-weight: bold; text-transform: uppercase; font-size: 45px; border-bottom: 2px solid #aaa;}
-h2 { font-weight: bold; font-size: 26px; border-bottom: 1px dashed #bbb; margin-top: 1.55em; }
-h3 { font-weight: bold; font-size: 19px; border: none; }
-p, li { font-size: 17px; }
-li { line-height: 1.5em; }
+body {
+    margin: 40px;
+    margin-top: 60px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-weight: bold;
+	text-transform: uppercase;
+	font-size: 45px;
+	border-bottom: 2px solid #aaa;
+}
+h2 {
+    font-weight: bold;
+	font-size: 26px;
+	border-bottom: 1px dashed #bbb;
+	margin-top: 1.55em;
+	}
+h3 {
+    font-weight: bold;
+	font-size: 19px;
+	border: none;
+	}
+p, li {
+    font-size: 17px;
+}
+li {
+    line-height: 1.5em;
+}
 img { max-width: 100% !important;}
+
+a { color: #c04; }
+a:visited { color: #604 }
+
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #e26;
+    background-color: #ddd;
+    white-space: nowrap;
+    border-radius: 4px;
+}
+
+/* only tables in the body */
+body tr:nth-child(even) {background-color: #ddd;}
+body tr:nth-child(odd) {background-color: #ccc;}
+body tr:hover {background-color: #ece;}
+body th, td {
+    padding: 5px;
+    text-align: left;
+    padding-left: 5px;
+}
 
 
 #content .check {
@@ -21,3 +93,60 @@ img { max-width: 100% !important;}
     width: 20px;
     margin-right: 10px;
 }
+
+#head-title, #complete { 
+    margin: 10px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#head-title{ float:left; }
+#complete{ width: fill; }
+/* progress bar background rectangle: */
+.progress{
+    overflow: hidden;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+    /*
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+     */
+}
+/* progress bar completion fill: */
+.progress-bar{
+    width: 0%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color:  black;
+    text-align: center;
+    background-color: #6c6;
+    transition: width 0.6s ease;
+    /*
+     float: left;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: width 0.6s ease;
+     */
+}
+/*
+@-webkit-keyframes progress-bar-stripes{
+	from{background-position:40px 0;}
+	to{background-position:0 0;}
+}
+
+@keyframes progress-bar-stripes{
+	from{background-position:40px 0;}
+	to{background-position:0 0;}
+}
+.progress-striped .progress-bar{background-image:-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-size:40px 40px;}
+.progress.active .progress-bar{-webkit-animation:progress-bar-stripes 2s linear infinite;animation:progress-bar-stripes 2s linear infinite;}
+.progress-bar-success{background-color:#5cb85c;}
+.progress-striped .progress-bar-success{background-image:-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);}
+.progress-bar-info{background-color:#5bc0de;}
+.progress-striped .progress-bar-info{background-image:-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);}
+.progress-bar-warning{background-color:#f0ad4e;}
+.progress-striped .progress-bar-warning{background-image:-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);}
+.progress-bar-danger{background-color:#d9534f;}
+.progress-striped .progress-bar-danger{background-image:-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);background-image:linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);}
+*/
