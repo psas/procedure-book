@@ -1,6 +1,6 @@
 ---
 title: Reference
-layout: base
+layout: checklist
 ---
 
 # Reference

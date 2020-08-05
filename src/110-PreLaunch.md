@@ -1,6 +1,6 @@
 ---
 title: Pre Launch
-layout: base
+layout: checklist
 ---
 
 # Pre Launch

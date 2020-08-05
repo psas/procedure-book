@@ -1,6 +1,6 @@
 ---
 title: Development
-layout: base
+layout: checklist
 ---
 
 # Development

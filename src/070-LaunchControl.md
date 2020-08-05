@@ -1,6 +1,6 @@
 ---
 title: Launch Control Setup
-layout: base
+layout: checklist
 ---
 
 # Launch Control Setup

@@ -1,6 +1,6 @@
 ---
 title: Seting up the flight director table
-layout: base
+layout: checklist
 ---
 
 # Flight director table setup

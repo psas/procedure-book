@@ -1,6 +1,6 @@
 ---
 title: Rocket Button Up
-layout: base
+layout: checklist
 ---
 
 # Final Rocket Button Up

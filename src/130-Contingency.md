@@ -1,6 +1,6 @@
 ---
 title: Contingency
-layout: base
+layout: checklist
 ---
 
 # Contingency

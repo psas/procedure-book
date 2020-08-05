@@ -1,6 +1,6 @@
 ---
 title: Drop Tower Test
-layout: base
+layout: checklist
 ---
 
 # Drop Test Procedures

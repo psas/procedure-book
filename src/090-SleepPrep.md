@@ -1,6 +1,6 @@
 ---
 title: Sleep Prep
-layout: base
+layout: checklist
 ---
 
 

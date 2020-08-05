@@ -1,6 +1,6 @@
 ---
 title: Launch Procedures
-layout: base
+layout: checklist
 ---
 
 # LAUNCH

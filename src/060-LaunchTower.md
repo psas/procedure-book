@@ -1,6 +1,6 @@
 ---
 title: Launch Tower Setup
-layout: base
+layout: checklist
 ---
 
 # Launch Tower Setup

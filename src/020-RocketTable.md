@@ -1,6 +1,6 @@
 ---
 title: SSH In to Flight Computer Test
-layout: base
+layout: checklist
 ---
 
 # Rocket table setup

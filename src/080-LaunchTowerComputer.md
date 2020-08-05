@@ -1,6 +1,6 @@
 ---
 title: Launch Tower Computer (LTC) Setup And Configuration
-layout: base
+layout: checklist
 ---
 
 #  Launch Tower Computer Setup

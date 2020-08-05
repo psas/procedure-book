@@ -1,6 +1,6 @@
 ---
 title: Personal Supplies
-layout: base
+layout: checklist
 ---
 
 # Personal Supplies

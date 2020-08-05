@@ -1,6 +1,6 @@
 ---
 title: Inventory
-layout: base
+layout: checklist
 ---
 
 # Inventory
