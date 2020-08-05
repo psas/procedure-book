@@ -1,8 +1,17 @@
-/* Sticky CSS Footer */
-html, body, .wrapper {
+html, .wrapper {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+    color: #222;
+    background: #eee;
+}
+
+body {
+    margin: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 60px;
 }
 body > .wrapper {
     height: auto;
@@ -33,13 +42,6 @@ body > .wrapper {
     padding-right: 20px; 
 }
 
-body {
-    margin: 40px;
-    margin-top: 60px;
-    font-family: sans-serif;
-    color: #333;
-}
-
 h1 {
     font-weight: bold;
 	text-transform: uppercase;
@@ -51,19 +53,21 @@ h2 {
 	font-size: 26px;
 	border-bottom: 1px dashed #bbb;
 	margin-top: 1.55em;
-	}
+}
 h3 {
     font-weight: bold;
 	font-size: 19px;
 	border: none;
-	}
+}
 p, li {
     font-size: 17px;
 }
 li {
     line-height: 1.5em;
 }
-img { max-width: 100% !important;}
+img { 
+    max-width: 80% !important;
+}
 
 a { color: #c04; }
 a:visited { color: #604 }
@@ -77,17 +81,17 @@ code {
     border-radius: 4px;
 }
 
-/* only tables in the body */
-body tr:nth-child(even) {background-color: #ddd;}
-body tr:nth-child(odd) {background-color: #ccc;}
-body tr:hover {background-color: #ece;}
-body th, td {
+/* table stuff */
+tr:nth-child(even) {background-color: #ddd;}
+tr:nth-child(odd) {background-color: #ccc;}
+tr:hover {background-color: #ece;}
+th, td {
     padding: 5px;
     text-align: left;
     padding-left: 5px;
 }
 
-
+/* check boxes */
 #content .check {
     height: 20px;
     width: 20px;

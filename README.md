@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: base
 title: README
 ---
 ![cover](format/procedurebook_cover.png)

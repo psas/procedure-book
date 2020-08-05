@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: checklist
 title: PSAS Procedure Book
 ---
 
