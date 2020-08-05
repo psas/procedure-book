@@ -67,6 +67,9 @@ li {
 }
 img { 
     max-width: 80% !important;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a { color: #c04; }
@@ -85,10 +88,15 @@ code {
 tr:nth-child(even) {background-color: #ddd;}
 tr:nth-child(odd) {background-color: #ccc;}
 tr:hover {background-color: #ece;}
+table { 
+    margin-left: auto;
+    margin-right: auto;
+}
 th, td {
     padding: 5px;
     text-align: left;
-    padding-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* check boxes */

@@ -13,8 +13,8 @@ title: TODO
 - [X] organizing the chapters so they don't spam up the top level dir
 
 ### general
-- [ ] Create a nomenclature section (acronyms you'd need to know on a launch weekend)
-- [ ] create TODOs for each existing chapter
+- [X] Create a nomenclature section (acronyms you'd need to know on a launch weekend)
+- [X] create TODOs for each existing chapter
     - [ ] identify procedures that are no longer relevant to LV3
     - [ ] add "caution" and "danger" callouts for steps that are dangerous to hardware and people, respectively
 
@@ -22,7 +22,7 @@ title: TODO
 ### Nomenclature
 - [X] Compile a list of acronyms/initialisms that currently appear.
     - [ ] Add a brief explanation to everything on that list.
-- [ ] Dump in the relevant ones Joe can think of.
+- [~] Dump in the relevant ones Joe can think of.
 - [ ] Get Andrew to provide some.
 
 ### Development

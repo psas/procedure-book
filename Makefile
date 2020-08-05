@@ -1,4 +1,4 @@
-.DEFAULT_GOAL := pamphlet.pdf
+.DEFAULT_GOAL := book.pdf
 SHELL=/usr/bin/env bash
 DEPENDS=pandoc pdflatex bc echo rm# also the pdfpages package in LaTeX
 PAMP_FOLD_SPACE=0# inches
@@ -94,7 +94,7 @@ checkDepends:
 
 siteDev:
 	firefox http://localhost:$(PORT)/
-	jekyll serve --watch --livereload --port $(PORT) 
+	jekyll serve --watch --livereload --livereload-min-delay 2 --port $(PORT) 
 
 test:
 	echo 'scale=3;($(PAMP_PHYS_HEIGHT) - $(PAMP_FOLD_SPACE))/2' | bc
